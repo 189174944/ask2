@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>编辑个人资料</title>
+	<link rel="stylesheet" type="text/css" href="css/semantic.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/semantic.js"></script>
+
+</head>
+<body>
+	<div class="gudin">
+		<div class="pageIndex">
+			<div class="page-right">
+				<div class="nav-top">
+					<form action="./" method="get">
+						<div class="ui icon input">
+							<input class="prompt" type="text" name="search" placeholder="搜索你感兴趣的内容" />
+							<i class="search icon"></i>
+						</div>&nbsp; &nbsp;
+						<div class="tiwen"><input type="submit" class="ui primary button " value="提问"></div>
+						<div class="choice"><i class="idea icon"></i>回答</div>
+						<div class="choice"><a href="http://192.168.10.103/ui27/addxinzhi.html" ><i class="edit icon"></i>写文章</a></div>
+						<div class="choice news">消息<span class="label">19</span></div>
+						<div class="login">
+							<ul>
+								<li><a href="#"> 注册 </a> | <a href="#"> 登录 </a></li>
+
+							</ul>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--头部结束-->
+
+	<div class="contentBox clear ">
+		<div class="ProfileHeader-main">
+			<div>
+				<div class="UserAvatarEditor ProfileHeader-avatar">
+					<div class="UserAvatar">
+						<img src="images/content-img-1.png" width="160px" height="160px">
+					</div>
+					<div class="Mask UserAvatarEditor-mask">
+						<div class="Mask-mask Mask-mask--black UserAvatarEditor-maskInner"></div>
+						<div class="Mask-content">
+							<i class="photo icon"></i>
+							<div>修改我的头像</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ProfileHeader-content">
+				<div class="ProfileHeader-contentHead">
+					<h1 class="ProfileHeader-title">我的名字</h1>
+					<div class="ProfileHeader-expandActions ProfileEdit-expandActions">
+						<a href="#" class="Button--plain">返回我的主页<i class="angle right icon"></i></a>
+					</div>
+				</div>
+				<div class="ProfileEdit-fields">
+					<form class="Field">
+						<h3 class="Field-label">性别</h3>
+						<div class="Field-content">
+							<div style="display:none">
+								<span class="Field-text">未知</span>
+								<span class="hoverEdit Field-modify">
+									<i class="write icon"></i>修改
+								</span>
+							</div>
+							<div>
+								<span class="hoverEdit">
+									<i class="write icon"></i>请填写性别
+								</span>
+							</div>
+							<div>
+								<input name="gender" type="radio" value="男" />男
+								<input name="gender" style="margin-left: 30px;" type="radio" value="女" />女
+								<div class="ButtonGroup">
+									<button class="ui primary button">确定</button>
+									<button class="ui button">取消</button>
+								</div>
+							</div>
+						</div>
+					</form>
+					<form class="Field">
+						<h3 class="Field-label">一句话</h3>
+						<div class="Field-content">
+							<div style="display:none">
+								<span class="Field-text">未知</span>
+								<span class="hoverEdit Field-modify">
+									<i class="write icon"></i>修改
+								</span>
+							</div>
+								<div>
+								<span class="hoverEdit">
+									<i class="write icon"></i>请填写一句话
+								</span>
+							</div>
+
+							<div>
+								<div class="ui icon input HeadlineField-input">
+									<input class="prompt" type="text" name="search" placeholder="介绍" />
+								</div>
+								<div class="ButtonGroup">
+									<button class="ui primary button">确定</button>
+									<button class="ui button">取消</button>
+								</div>
+							</div>
+						
+						</div>
+					</form>
+					<form class="Field">
+						<h3 class="Field-label">居住地</h3>
+						<div class="Field-content">
+						   <div style="display:none">
+								<span class="Field-text">居住地</span>
+								<span class="hoverEdit Field-modify">
+									<i class="write icon"></i>修改
+								</span>
+							</div>
+							<div class="AddButton" style="display:none">
+								<span class="Button--link">
+									<i class="plus square outline icon"></i>添加居住地
+								</span>
+							</div>
+
+							<div >
+								<div class="ui icon input addressInput">
+									<input class="prompt" type="text" name="search" placeholder="地址" />
+								</div>
+								<div class="">
+									<button class="ui primary button">确定</button>
+									<button class="ui button">取消</button>
+								</div>
+							</div>
+						
+						</div>
+					</form>
+                
+           <form class="Field">
+						<h3 class="Field-label">所在行业</h3>
+						<div class="Field-content">
+							<div style="display:none">
+								<span class="Field-text">未知</span>
+								<span class="hoverEdit Field-modify">
+									修改
+								</span>
+							</div>
+							<div>
+								<span class="hoverEdit">
+									<i class="write icon"></i>请填写行业信息
+								</span>
+							</div>
+							<div>
+								<div class="Popover">
+									<button class="Button Select-button">
+									互联网
+									<span class="inline iconUpDown clear">
+              	 					<i class="angle up icon"></i>
+              	 					<i class="angle down icon"></i>
+              	 				</span></button>
+              	 				<div class="Popover-content" style="display:none">
+              	 				<div class="Select-list">
+              	 					<div class="Select-option">高新科技</div>
+              	 					<div class="Select-option">高新科技</div>
+              	 					<div class="Select-option">高新科技</div>
+              	 					<div class="Select-option">高新科技</div>
+              	 					<div class="Select-option">高新科技</div>
+              	 					<div class="Select-option">高新科技</div>
+              	 					<div class="Select-option">高新科技</div>
+              	 				</div>
+              	 				</div>
+								</div>
+							</div>
+						
+						</div>
+					</form>
+		         <form class="Field">
+						<h3 class="Field-label">职业经历</h3>
+						<div class="Field-content">
+							<div class="AddButton">
+								<span class="Button--link">
+									<i class="plus square outline icon"></i>添加职业经历
+								</span>
+							</div>
+							<div class="Field-list">
+								<div class="Field-card">
+									<img src="images/content-img-1.png" width="20" height="20">
+									<span>
+									这家公司<span class="Field-dot">·</span>开发
+									</span>
+								</div>
+							</div>
+							<div style="display:none">
+								<div class="ui icon input addressInput">
+									<input class="prompt" type="text" name="search" placeholder="公司" />
+								</div>
+									<div class="ui icon input addressInput">
+									<input class="prompt" type="text" name="search" placeholder="职位" />
+								</div>
+								<div class="">
+									<button class="ui primary button">确定</button>
+									<button class="ui button">取消</button>
+								</div>
+							</div>
+						
+						</div>
+					</form>
+					   <form class="Field">
+						<h3 class="Field-label">教育经历</h3>
+						<div class="Field-content">
+							<div class="AddButton">
+								<span class="Button--link">
+									<i class="plus square outline icon"></i>教育经历
+								</span>
+							</div>
+							<div class="Field-list">
+								<div class="Field-card">
+									<img src="images/content-img-1.png" width="20" height="20">
+									<span>
+									这家学校<span class="Field-dot">·</span>睡觉
+									</span>
+								</div>
+							</div>
+							<div style="display:none">
+								<div class="ui icon input addressInput">
+									<input class="prompt" type="text" name="search" placeholder="学校" />
+								</div>
+									<div class="ui icon input addressInput">
+									<input class="prompt" type="text" name="search" placeholder="专业" />
+								</div>
+								<div class="">
+									<button class="ui primary button">确定</button>
+									<button class="ui button">取消</button>
+								</div>
+							</div>
+						
+						</div>
+					</form>
+					<form class="Field">
+						<h3 class="Field-label">个人简介</h3>
+						<div class="Field-content">
+						   <div style="display:none">
+								<span class="Field-text">个人简介</span>
+								<span class="hoverEdit Field-modify">
+									<i class="write icon"></i>修改
+								</span>
+							</div>
+							<div class="AddButton" >
+								<span class="Button--link">
+										<i class="write icon"></i>填写
+								</span>
+							</div>
+							<div  style="display:none">
+								<textarea class="DescriptionField-input TextArea" rows="3"></textarea>
+								<div class="ButtonGroup">
+									<button class="ui primary button">确定</button>
+									<button class="ui button">取消</button>
+								</div>
+							</div>
+						
+						</div>
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+
+      </div>
+
+
+
+
+
+  </body>
+  </html>
