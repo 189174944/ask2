@@ -1,17 +1,17 @@
 .contentBox{
-	padding: 16px;
-	font-size: 14px;
-	background-color: #fff;
-	max-width: 1100px;
-	margin: 65px auto 0;
+    padding: 16px;
+    font-size: 14px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 65px auto 0;
 }
 
 .inline{
-	display: inline-block;
-	vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 i{
-	font-style: normal;
+    font-style: normal;
 }
 a {
     color: inherit;
@@ -62,21 +62,22 @@ h1,h2,h3{
 }
 .QuestionHeader-title{
     margin-top: 12px;
-margin-bottom: 4px;
-font-size: 22px;
-font-weight: 600;
-font-synthesis: style;
-line-height: 32px;
-color: #1a1a1a;
+    margin-bottom: 4px;
+    font-size: 22px;
+    font-weight: 600;
+    font-synthesis: style;
+    line-height: 32px;
+    color: #1a1a1a;
 }
 .QuestionHeader-detail {
     min-height: 10px;
 }
 .QuestionRichText--expandable.QuestionRichText--collapsed {
-    max-height: 51px;
-    overflow: hidden;
+    /*max-height: 51px;*/
+    /*overflow: hidden;*/
     cursor: pointer;
     transition: color .14s ease-out;
+    margin-bottom: 10px;
 }
 .QuestionRichText {
     font-size: 15px;
@@ -90,10 +91,10 @@ color: #1a1a1a;
     white-space: pre-wrap;
 }
 .QuestionRichText .showContent{
-      color: #8590a6;;
+    color: #8590a6;;
 }
 .QuestionHeader-footer-main {
-        display: -webkit-box;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
@@ -102,24 +103,23 @@ color: #1a1a1a;
     margin-top: 4px;
     width: auto;
     padding-left: 20px;
-box-sizing: border-box;
+    box-sizing: border-box;
 }
- .QuestionButtonGroup {
+.QuestionButtonGroup {
     display: inline-block;
-    margin: 0 -8px;
-
+    /*margin: 0 -8px;*/
 }
 .QuestionHeader-footer-main{
-        color: #77839c;
-        position: relative;
+    color: #77839c;
+    position: relative;
 }
 .QuestionHeader-footer-main > span{
-    margin-left: 20px;
+    margin-left:20px;
     cursor: pointer;
 }
 .hideContent{
-  position: absolute;
-  right: 0;
+    position: absolute;
+    right: 0;
 }
 .AnswerAdd-header {
     display: -webkit-box;
@@ -164,9 +164,9 @@ box-sizing: border-box;
 
 }
 .AnswerAdd-topicBiosButton.choice{
- position: absolute;
- right: 0;
- cursor: pointer;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
 }
 
 /*内容页 end */
@@ -181,15 +181,16 @@ box-sizing: border-box;
 .followNav-item.active:after{content:"";display: block;height: 2px;width: 100%;background-color: #646464;position: absolute;bottom: -2px;left: 0;z-index: 2;}
 .button.follow{float: right;color:#fff;font-size:14px;background-color: #68bd46;text-align: center;margin-top: 12px;margin-bottom: 13px !important;border-radius: 20px !important;padding: 8px 18px !important;font-weight: 500 !important;}
 .button.follow:hover{color:#fff;background-color: #68bd46;}
-.followAuthor{color: #393542;padding-bottom: 20px;font-size: 12px;background-color: #fff;}
+.followAuthor{color: #2b2b2b;padding-bottom: 20px;font-size: 12px;background-color: #fff;}
 .followAuthor-item{margin-top: 20px;}
 .followAuthor p{margin-bottom: 5px;}
-.authorImg{width: 64px !important;height: 64px !important;margin: 0 12px;}
+.thin{color: #7a7a7a;}
+.authorImg{width: 64px !important;height: 64px !important;margin: 0 20px 0 30px;}
 .followAuthor-word{width: 70%;}
 .followAuthor-word .name{margin-bottom: 14px;font-size: 14px;}
 .followAuthor-word .name strong{font-size: 18px;color: #000;margin-right: 8px;}
 .followAuthor-word .wordItem >span,.followAuthor-word .wordItem >.icon{margin-right: 8px;}
-.wordItem.togle{color: #939eaf;}
+.wordItem.togle a{color: #939eaf;}
 .fllowButtonBox{margin-left: 3%;}
 .followTopic{font-size: 12px;line-height: 1.5;padding-bottom: 20px;}
 .followTopic h4{margin-bottom: 8px;}
@@ -203,60 +204,61 @@ box-sizing: border-box;
 
 /* 我的主页 start */
 .personalContent{
-	background: #f1f1f1;
-		padding-top: 0
+    background: #ffffff;
+    padding-top: 0
 }
 .personalContent .followAuthor-item{
-	margin: 0;
-	padding-top: 20px;
+    margin: 0;
+    padding-top: 20px;
 }
 .Button--plain{
-	color: gray
+    color: gray
 }
 .Button--plain:hover {
     color: #77839c;
 }
 .Profile-main{
-	display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
 
-margin: 10px auto;
--webkit-box-pack: justify;
--ms-flex-pack: justify;
-justify-content: space-between;
--webkit-box-align: start;
--ms-flex-align: start;
-align-items: flex-start;
-color: #1a1a1a;
+    margin: 10px auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    color: #1a1a1a;
 }
 .editButton{
- background-color: #f3f8ff;
- color: #3285f7;
- border-radius: 6px;
- border: solid 1px #3285f7;
- line-height: 40px;
- padding: 0 20px;
+    background-color: #f3f8ff;
+    color: rgba(51, 139, 255, 0.79);
+    border-radius: 5px;
+    border: solid 1px #3285f7;
+    line-height: 30px;
+    padding: 0 15px;
 }
 .Profile-mainColumn{
-	width: 70%;
+    width: 70%;
 
 }
 
 .ProfileMain{
-	background: #fff;
-overflow: hidden;
-border-radius: 2px;
-box-shadow: 0 1px 3px rgba(26,26,26,.1);
-box-sizing: border-box;
-margin-bottom: 0;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 2px;
+    /*box-shadow: 0 1px 3px rgba(26,26,26,.1);*/
+    box-sizing: border-box;
+    margin-bottom: 0;
 }
 .ProfileMain-tabs {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     padding-left: 10px;
+    border-bottom: solid 1px #f2f2f2;
 }
 .Tabs-item {
     display: inline-block;
@@ -272,25 +274,29 @@ margin-bottom: 0;
     color: #1a1a1a;
     text-align: center;
 }
-.Tabs-link.is-active::after {
-    position: absolute;
-    right: 0;
-    bottom: -1px;
-    left: 0;
-    height: 3px;
-    background: #0084ff;
-    content: "";
-
+.ProfileMain-tabs .Tabs-item a:hover{
+    padding-bottom:11px;
+    border-bottom: solid 3px  #0084ff;
 }
+/*.Tabs-link.is-active::after {*/
+/*position: absolute;*/
+/*right: 0;*/
+/*bottom: -1px;*/
+/*left: 0;*/
+/*height: 3px;*/
+/*background: #0084ff;*/
+/*content: "";*/
+
+/*}*/
 .ProfileMain-tabs .Tabs-meta {
     font-weight: 400;
 }
 .Tabs-meta {
     margin-left: 6px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
     line-height: 20px;
-    color: #999;
+    color: #8c8c8c;
 }
 .ProfileMain-menuToggler {
     font-size: 16px;
@@ -330,9 +336,9 @@ margin-bottom: 0;
     display: flex;
 }
 .ActivityItem-metaTitle{
--webkit-box-flex: 1;
--ms-flex: 1;
-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 .ContentItem-main {
     display: -webkit-box;
@@ -375,18 +381,18 @@ flex: 1;
     font-weight: 400;
 }
 .Popover .outline{
-	transform:rgba(45deg);
+    transform:rgba(45deg);
 }
 .iconUpDown {
- width: 18px;
- margin-left: -2px;
- line-height: 1;
+    width: 18px;
+    margin-left: -2px;
+    line-height: 1;
 }
 
 .iconUpDown .down{
-	margin-top: -4px !important;
-	display: inline-block;
-	float: left;
+    margin-top: -4px !important;
+    display: inline-block;
+    float: left;
 }
 
 .AnswerItem-authorInfo {
@@ -398,9 +404,9 @@ flex: 1;
     color: #646464;
 }
 .AuthorInfo-avatarWrapper img{
-	width: 38px;
-	height: 38px;
-	border-radius: 5px;
+    width: 38px;
+    height: 38px;
+    border-radius: 5px;
 }
 
 .AuthorInfo-head {
@@ -441,17 +447,17 @@ flex: 1;
     color: #646464;
 }
 .ContentItem-more{
-	padding: 0;
-margin-left: 4px;
-color: #175199;
+    padding: 0;
+    margin-left: 4px;
+    color: #175199;
 }
 .VoteButton {
     padding: 0 10px;
     color: #0084ff;
     background: rgba(0,132,255,.1);
-  display: inline-block;
-  line-height: 34px;
-  border-radius: 5px;
+    display: inline-block;
+    line-height: 34px;
+    border-radius: 5px;
 }
 
 .RichContent-inner {
@@ -474,7 +480,7 @@ color: #175199;
 
 }
 .ContentItem-action{
- margin-left: 16px;
+    margin-left: 16px;
 }
 .ContentItem-title + .ContentItem-meta {
     margin-top: 6px;
@@ -499,7 +505,7 @@ color: #175199;
     align-items: center;
 }
 .ContentItem-more{
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .ContentItem-status {
@@ -514,47 +520,47 @@ color: #175199;
 
 /*我的文章*/
 .ProfileArticle-header{
-	border-bottom: solid 1px #dedede;
-	padding: 0 20px;
+    /*border-bottom: solid 1px #dedede;*/
+    padding: 0 20px;
 }
 .ProfileArticle-nav{
-	display: inline-block;
-	padding-left: 5px;
-	margin: 0;
+    display: inline-block;
+    padding-left: 5px;
+    margin: 0;
 }
 .ProfileArticle-nav li{
-	display: inline-block;
-	vertical-align: bottom;
-	font-size: 15px;
-		line-height: 45px;
-		position: relative;
-		padding: 0 12px;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 15px;
+    line-height: 45px;
+    position: relative;
+    padding: 0 12px;
 }
 .ProfileArticle-nav li.active{
-	color: #ff0000;
+    color: #ff0000;
 
 }
 .ProfileArticle-nav li.active:after{
-content:"";display: block;height: 2px;width: 100%;background-color: #ff0000;position: absolute;bottom: 0;left: 0;z-index: 2;
+    content:"";display: block;height: 2px;width: 100%;background-color: #ff0000;position: absolute;bottom: 0;left: 0;z-index: 2;
 }
 .searchBox{
-	display: inline-block;
-	vertical-align: middle;
-	float: right;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
 }
 
 .searchBox .ui.input{
-	width: 160px;
-	padding-right: 0;
+    width: 160px;
+    padding-right: 0;
 }
 .searchBox .ui.icon.input input{
-	padding: 6px !important;
+    padding: 6px !important;
 }
 .searchBox i{
- margin-top: 9px;
- font-size: 16px;
- margin-left: 5px;
- color: #999;
+    margin-top: 9px;
+    font-size: 16px;
+    margin-left: 5px;
+    color: #999;
 }
 
 
@@ -562,15 +568,15 @@ content:"";display: block;height: 2px;width: 100%;background-color: #ff0000;posi
 /* 右边*/
 
 .Profile-sideColumn{
-	width:29%;
-	color: #646464;
+    width:26%;
+    color: #646464;
 }
 .Card {
     margin-bottom: 10px;
     background: #fff;
     overflow: hidden;
     border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    box-shadow: 2px 2px 1px 2px rgba(172, 172, 172, 0.10);
     box-sizing: border-box;
 }
 .Card-header {
@@ -601,12 +607,13 @@ content:"";display: block;height: 2px;width: 100%;background-color: #ff0000;posi
 .Profile-sideColumnItem {
     padding: 6px 20px;
 }
+.IconGraf{margin-bottom: 5px;line-height: 30px;}
 .IconGraf:last-child {
     margin-bottom: 0;
 }
 .IconGraf .icon{
- font-size: 18px;
- margin-bottom: -2px;
+    font-size: 18px;
+    margin-bottom: -2px;
 }
 
 .Profile-sideColumnItemLink {
@@ -647,7 +654,7 @@ content:"";display: block;height: 2px;width: 100%;background-color: #ff0000;posi
     text-align: center;
     cursor: pointer;
     background: none;
-        background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     border: 1px solid;
     border-radius: 3px;
 }
@@ -663,10 +670,10 @@ content:"";display: block;height: 2px;width: 100%;background-color: #ff0000;posi
     font-synthesis: style;
 }
 .NumberBoard-item{
-	padding:10px 16px;
+    padding:10px 16px;
 }
 .FollowshipCard-counts .NumberBoard-item:last-child{
-	border-left:solid 1px #dedede;
+    border-left:solid 1px #dedede;
 }
 .Profile-lightList {
     font-size: 14px;
@@ -694,40 +701,40 @@ content:"";display: block;height: 2px;width: 100%;background-color: #ff0000;posi
 }
 
 .ProfileArticle-item{
-	padding: 20px;
-	color: #888888;
+    padding: 20px;
+    color: #888888;
 }
 .ProfileArticle-word{
-	width: 74%;
-	display: inline-block;
-	margin-right: 2%;
-	font-size: 13px;
+    width: 74%;
+    display: inline-block;
+    margin-right: 2%;
+    font-size: 13px;
 }
 
 .ProfileArticle-img{
-	width: 23%;
-	height: 100px;
+    width: 23%;
+    height: 100px;
 }
 .ProfileArticle-word p{
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 .ProfileArticle-word h3{
-	margin-bottom: 5px;
-	color: #1a1a1a;
-	font-size: 16px;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+    font-size: 16px;
 }
 .ArticlewordItem>span{
- margin:0 6px;
+    margin:0 6px;
 }
 .ArticlewordItem .dian{
-	font-size: 10px;
+    font-size: 10px;
 }
 .ArticlewordItem .edit{
-  color: #B8B8B8;
+    color: #B8B8B8;
 }
 .ArticlewordItem .more{
-font-size: 12px;
-margin-right: 2px;
+    font-size: 12px;
+    margin-right: 2px;
 }
 
 
@@ -796,7 +803,7 @@ margin-right: 2px;
     transform: translate(-50%,-50%);
 }
 .Mask-content .photo{
- font-size: 36px;
+    font-size: 36px;
 }
 .ProfileHeader-content {
     padding-top: 16px;
@@ -804,7 +811,7 @@ margin-right: 2px;
     border-left: 164px solid transparent;
 }
 .ProfileHeader-content h3{
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 .ProfileHeader-contentHead {
     position: relative;
@@ -860,41 +867,41 @@ margin-right: 2px;
     vertical-align: top;
 }
 .HeadlineField-input {
-  float: none !important;
-  width: 500px !important;
+    float: none !important;
+    width: 500px !important;
 }
 .addressInput{
-	margin-right: 20px;
+    margin-right: 20px;
 }
 .Button--link{
-	background-color: initial;
-color: #144785;
-cursor: pointer;
+    background-color: initial;
+    color: #144785;
+    cursor: pointer;
 }
 .hoverEdit{
-background-color: initial;
-color: #144785;
-cursor: pointer;
+    background-color: initial;
+    color: #144785;
+    cursor: pointer;
 }
 .AddButton{
-	line-height: 36px;
+    line-height: 36px;
 }
 .AddButton .icon{
- font-size: 26px;
- vertical-align: middle;
- margin-top: -10px;
+    font-size: 26px;
+    vertical-align: middle;
+    margin-top: -10px;
 }
 .Field .iconUpDown {
-	margin-top: -2px;
+    margin-top: -2px;
 }
 .Popover-content{
-	    position: absolute;
-background: #fff;
-border: 1px solid #ebebeb;
-border-radius: 4px;
-box-shadow: 0 5px 20px rgba(26,26,26,.1);
-z-index: 203;
-width: 100%;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(26,26,26,.1);
+    z-index: 203;
+    width: 100%;
 }
 .Select-list {
     position: relative;
@@ -917,7 +924,7 @@ width: 100%;
     outline: none;
     overflow: hidden;
     white-space: normal;
-   text-overflow: ellipsis;
+    text-overflow: ellipsis;
 }
 .Field-list {
     margin: 14px -10px 0;
@@ -958,11 +965,10 @@ width: 100%;
     transition: background .2s;
     resize: none;
 }
-
-
-
-
-
+/*添加样式*/
+.kong{text-indent:2em;}
+.kong a{color: #999999;}
+/*添加样式end*/
 /* 编辑资料 end */
 
 
