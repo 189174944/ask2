@@ -540,7 +540,7 @@ h1,h2,h3{
 .ProfileArticle-nav li a:hover{color:#ff0000;padding-bottom:11px; border-bottom: solid 2px #ff0000; }
 
 .ProfileArticle-nav li.active{
-    color: #ff0000;
+    color: #ff0001;
 
 }
 .ProfileArticle-nav li.active:after{
