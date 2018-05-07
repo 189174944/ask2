@@ -1,223 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>我的主页</title>
-	<link rel="stylesheet" type="text/css" href="css/semantic.css">
-
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/semantic.js"></script>
+    <meta charset="UTF-8">
+    <title>我的主页</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/semantic.js"></script>
 
 </head>
 <body>
-	<div class="gudin">
-		<div class="pageIndex">
-			<div class="page-right">
-				<div class="nav-top">
-					<form action="./" method="get">
-						<div class="ui icon input">
-							<input class="prompt" type="text" name="search" placeholder="搜索你感兴趣的内容" />
-							<i class="search icon"></i>
-						</div>&nbsp; &nbsp;
-						<div class="tiwen"><input type="submit" class="ui primary button " value="提问"></div>
-						<div class="choice"><i class="idea icon"></i>回答</div>
-						<div class="choice"><a href="http://192.168.10.103/ui27/addxinzhi.html" ><i class="edit icon"></i>写文章</a></div>
-						<div class="choice news">消息<span class="label">19</span></div>
-						<div class="login">
-							<ul>
-								<li><a href="#"> 注册 </a> | <a href="#"> 登录 </a></li>
+<div class="gudin">
+    <div class="pageIndex">
+        <div class="page-right">
+            <div class="nav-top">
+                <div class="logo-img"><a href="./"> <img src="images/logo.png"></a></div>
+                <form action="./" method="get">
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" name="search" placeholder="搜索你感兴趣的内容" />
+                        <i class="search icon"></i>
+                    </div>&nbsp; &nbsp;
+                    <div class="tiwen"><input type="submit" class="ui primary button " value="提问"></div>
+                    <div class="choice"><i class="idea icon"></i>回答</div>
+                    <div class="choice"><a href="http://192.168.10.103/ui27/addxinzhi.html" ><i class="edit icon"></i>写文章</a></div>
+                    <div class="choice news">消息<span class="label">19</span></div>
+                    <div class="login">
+                        <ul>
+                            <li><a href="#"> 注册 </a> | <a href="#"> 登录 </a></li>
 
-							</ul>
-						</div>
-
-					</form>
-				</div>
-			</div>
-		</div>
-              <!-- 弹出框 -->
-              <div class="Modal-wrapper" style="display:none">
-                     <div class="Modal-backdrop"></div>
-                     <div class="Modal Modal--large QuestionAsk-Modal">
-                            <div class="Modal-inner">
-                                   <h3 class="Modal-title">写下你的问题</h3>
-                                   <div class="Modal-subtitle">描述精确的问题更易得到解答</div>
-                                   <div class="Modal-content">
-                                         <div class="QuestionAsk">
-                                          <form>
-                                                 <div class="QuestionAsk-section">
-                                                       <div class="QuestionAsk-title">
-                                                        <div class="Popover">
-                                                               <div class="Input-wrapper Input-wrapper--spread ">
-                                                                      <textarea placeholder="问题标题" autocomplete="off" class="Input" rows="3" ></textarea>
-                                                               </div>
-                                                        </div>
-                                                 </div>
-                                          </div>
-                                          <div class="QuestionAsk-section clear ">
-                                             <div class="ui icon input">
-                                                 <input class="prompt" type="text" name="search" placeholder="添加话题" />
-                                                 <i class="search icon"></i>
-                                          </div>
-                                   </div>
-
-                                   <div class="QuestionAsk-section QuestionAsk-DetailSection">
-                                       <div class="QuestionAsk-sectionHeader clear">
-                                         <span class="QuestionAsk-label">问题描述（可选）：</span>
-                                         <div class="QuestionAsk-sectionHeaderRight" style="margin-left: auto;">
-                                                <i class="font icon"></i>
-                                                <i class="image icon"></i>
-                                                <i class="video play icon"></i>
-                                         </div>
-                                  </div>
-                                  <div class="Input-wrapper">
-                                         <div class="Input Editable">
-                                               <div class="Dropzone RichText" style="min-height: 78px;">
-                                                <textarea placeholder="" autocomplete="off" class="Input" rows="2"></textarea>
-                                         </div>
-                                  </div>
-                           </div>
+                        </ul>
                     </div>
-                    <div class="QuestionAsk-section">
-                           <label class="QuestionAsk-anonymous" for="anonymous-checkbox">
-                                  <input id="anonymous-checkbox" type="checkbox" class="QuestionAsk-anonymousCheckbox" />匿名提问
-                           </label>
-                    </div>
-                    <div class="ModalButtonGroup QuestionAsk-buttonGroup ModalButtonGroup--vertical">
-                     <button class="ui primary button">提交问题</button>
-              </div>
 
-       </form>
-</div>
-</div>
-<div class="Modal-closeButton">
-      <i class="remove icon"></i>
-</div>
-</div>
-
-</div>
-
-</div>
-
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 <!--头部结束-->
 
 <div class="contentBox clear personalContent">
-  <div class="followAuthor">
-   <div class="followAuthor-item">
-    <img class="authorImg ui medium circular middle aligned tiny image" src="images/tp.png">
-    <div class="inline followAuthor-word">
-     <div class="name"><strong>简书</strong>微信公众号:迅狗跨境</div>
-     <p class="wordItem"><i class="shopping bag icon"></i><span>贸易零售</span><span>FDSOJDOSKO</span></p>
-     <!-- woman -->
-     <p class="wordItem"><i class="student icon"></i><span>www.yib2.com</span><span>关于我的故事</span><i class="man icon"></i></p>
-     <p class="wordItem togle"><i class="angle down icon"></i><span>查看详细资料</span></p>
+    <div class="followAuthor">
+        <div class="followAuthor-item">
+            <img class="authorImg ui medium circular middle aligned tiny image" src="images/love_4.png">
+            <div class="inline followAuthor-word">
+                <div class="name"><strong>亦范</strong>微信公众号:迅狗跨境电商天天说。提问请在值乎</div>
+                <p class="wordItem"><i class="shopping bag icon thin"></i><span>贸易零售</span><span>FDSOJDOSKO CJELS.VAD  CEO</span></p>
+                <!-- woman -->
+                <p class="wordItem"><i class="student icon thin"></i><span>www.yib2.com</span><span>关于我的故事</span><i class="man icon"></i></p>
+                <p class="wordItem togle"><i class="angle down icon"></i><span><a href="#">查看详细资料</a></span></p>
 
-</div>
-<div class="inline editButton">
-     编辑个人资料
-</div>
-</div>
-</div>
-<div class="Profile-main">
-   <div class="Profile-mainColumn">
-    <div class="ProfileMain">
-     <div class="ProfileMain-header">
-      <ul class="Tabs ProfileMain-tabs">
-       <li class="Tabs-item Tabs-item--noMeta"><a href="#" class="Tabs-link is-active">动态</a></li>
-       <li class="Tabs-item"><a href="#" class="Tabs-link">回答<span class="Tabs-meta">20</span></a></li>
-       <li class="Tabs-item"><a href="#" class="Tabs-link">提问<span class="Tabs-meta">20</span></a></li>
-       <li class="Tabs-item"><a href="#" class="Tabs-link">文章<span class="Tabs-meta">20</span></a></li>
-              	 	<!-- 	<li class="Tabs-item Tabs-item--noMeta">
-              	 			<a href="#" class="ProfileMain-menuToggler">更多<i class="angle down icon"></i></a>
-              	 		</li> -->
-              	 	</ul>
-              	 </div>
-              	 <!-- 我的动态 -->
-              	 <div class="List ProfileActivities" style="display:none">
-              	 	<div class="List-header">
-              	 		<h4 class="List-headerText"><span>我的动态</span></h4>
-              	 	</div>
-              	 	<div>
-              	 		<div class="List-item">
-              	 			<div class="List-itemMeta">
-              	 				<div class="ActivityItem-meta">
-              	 					<span class="ActivityItem-metaTitle">关注了话题</span>
-              	 					<span>一年前</span>
-              	 				</div>
-              	 			</div>
-              	 			<div class="ContentItem">
-              	 				<div class="ContentItem-main">
-              	 					<div class="ContentItem-image">
-              	 						<div class="Popover">
-              	 							<img class="Avatar--large" src="images/love_2.png">
-              	 						</div>
-              	 					</div>
-              	 					<div class="ContentItem-head">
-              	 						<h2 class="ContentItem-title">
-              	 							<a href="#" class="TopicLink">
-              	 								<div class="Popover">spring</div>
-              	 							</a>
-              	 						</h2>
-              	 					</div>
-              	 				</div>
-              	 			</div>
-              	 		</div>
+            </div>
+            <div class="inline editButton">
+                <a href="#">编辑个人资料</a>
+            </div>
+        </div>
+    </div>
+    <div class="Profile-main">
+        <div class="Profile-mainColumn">
+            <div class="ProfileMain">
+                <div class="ProfileMain-header">
+                    <ul class="Tabs ProfileMain-tabs">
+                        <li class="Tabs-item "><a href="#" class="Tabs-link is-active">动态</a><span class="Tabs-meta">220</span></li>
+                        <li class="Tabs-item"><a href="#" class="Tabs-link">回答</a><span class="Tabs-meta">20</span></li>
+                        <li class="Tabs-item"><a href="#" class="Tabs-link">提问</a><span class="Tabs-meta">20</span></li>
+                        <li class="Tabs-item"><a href="#" class="Tabs-link">文章</a><span class="Tabs-meta">20</span></li>
+                        <!-- 	<li class="Tabs-item Tabs-item--noMeta">
+                                <a href="#" class="ProfileMain-menuToggler">更多<i class="angle down icon"></i></a>
+                            </li> -->
+                    </ul>
+                </div>
+                <!-- 我的动态 -->
+                <div class="List ProfileActivities" style="display:none">
+                    <div class="List-header">
+                        <h4 class="List-headerText"><span>我的动态</span></h4>
+                    </div>
+                    <div>
+                        <div class="List-item">
+                            <div class="List-itemMeta">
+                                <div class="ActivityItem-meta">
+                                    <span class="ActivityItem-metaTitle">关注了话题</span>
+                                    <span>一年前</span>
+                                </div>
+                            </div>
+                            <div class="ContentItem">
+                                <div class="ContentItem-main">
+                                    <div class="ContentItem-image">
+                                        <div class="Popover">
+                                            <img class="Avatar--large" src="images/love_2.png">
+                                        </div>
+                                    </div>
+                                    <div class="ContentItem-head">
+                                        <h2 class="ContentItem-title">
+                                            <a href="#" class="TopicLink">
+                                                <div class="Popover">spring</div>
+                                            </a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-              	 	</div>
-              	 </div>
-              	 <!-- 我的回答 -->
-              	 <div class="Profile-answers" style="display:none">
-              	 	<div class="List-header">
-              	 		<h4 class="List-headerText">
-              	 			<span>我的回答</span>
-              	 		</h4>
-              	 		<div class="List-headerOptions">
-              	 			<div class="Popover">
-              	 				<span>按时间排序</span>
+                    </div>
+                </div>
+                <!-- 我的回答 -->
+                <div class="Profile-answers" style="display:none">
+                    <div class="List-header">
+                        <h4 class="List-headerText">
+                            <span>我的回答</span>
+                        </h4>
+                        <div class="List-headerOptions">
+                            <div class="Popover">
+                                <span>按时间排序</span>
               	 				<span class="inline iconUpDown clear">
               	 					<i class="angle up icon"></i>
               	 					<i class="angle down icon"></i>
               	 				</span>
-              	 			</div>
-              	 		</div>
-              	 	</div>
-              	 	<div class="">
-              	 		<div class="List-item">
-              	 			<div class="ContentItem AnswerItem">
-              	 				<h2 class="ContentItem-title">
-              	 					<a href="#">近年黑客做过哪些外行人看来牛逼的事？</a>
-              	 				</h2>
-              	 				<div class="ContentItem-meta">
-              	 					<div class="AuthorInfo AnswerItem-authorInfo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="List-item">
+                            <div class="ContentItem AnswerItem">
+                                <h2 class="ContentItem-title">
+                                    <a href="#">近年黑客做过哪些外行人看来牛逼的事？</a>
+                                </h2>
+                                <div class="ContentItem-meta">
+                                    <div class="AuthorInfo AnswerItem-authorInfo">
               	 						<span class="UserLink AuthorInfo-avatarWrapper">
               	 							<div class="Popover">
-              	 								<img src="images/jianshu.png">
-              	 							</div>
+                                                <img src="images/jianshu.png">
+                                            </div>
               	 						</span>
-              	 						<div class="AuthorInfo-content">
-              	 							<div class="AuthorInfo-head">
-              	 								<span class="UserLink AuthorInfo-name">我啊</span>
-              	 							</div>
-              	 							<div class="AuthorInfo-detail">
-              	 								<div class="AuthorInfo-badge">
-              	 									<div class="RichText AuthorInfo-badgeText">我的标签</div>
-              	 								</div>
-              	 							</div>
-              	 						</div>
-              	 					</div>
-              	 				</div>
-              	 				<div class="RichContent is-collapsed">
-              	 					<div class="RichContent-inner">
-              	 						<span class="RichText CopyrightRichText-richText">来看看回答</span>
-              	 						<span class=" ContentItem-more Button--plain">阅读全文<i class="angle down icon"></i></span>
-              	 					</div>
-              	 				</div>
-              	 				<div class="ContentItem-actions">
+                                        <div class="AuthorInfo-content">
+                                            <div class="AuthorInfo-head">
+                                                <span class="UserLink AuthorInfo-name">我啊</span>
+                                            </div>
+                                            <div class="AuthorInfo-detail">
+                                                <div class="AuthorInfo-badge">
+                                                    <div class="RichText AuthorInfo-badgeText">我的标签</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="RichContent is-collapsed">
+                                    <div class="RichContent-inner">
+                                        <span class="RichText CopyrightRichText-richText">来看看回答</span>
+                                        <span class=" ContentItem-more Button--plain">阅读全文<i class="angle down icon"></i></span>
+                                    </div>
+                                </div>
+                                <div class="ContentItem-actions">
               	 					<span>
               	 						<div class=" VoteButton VoteButton--up"><i class="caret up icon"></i>0</div>
               	 					</span>
@@ -233,128 +167,133 @@
               	 					<span class="ContentItem-action ">
               	 						<i class="setting icon"></i>设置
               	 					</span>
-              	 				</div>
-              	 			</div>
-              	 		</div>
-              	 	</div>
-              	 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-              	 <!--  我的提问 -->
-              	 <div class="List ProfileActivities" style="display:none">
-              	 	<div class="List-header">
-              	 		<h4 class="List-headerText"><span>我的提问</span></h4>
-              	 	</div>
-              	 	<div>
-              	 		<div class="List-item">
-              	 			<div class="ContentItem">
-              	 				<h2 class="ContentItem-title">
-              	 					<div class="QuestionItem-title">
-              	 						<a href="#">微信公众平台里 自动回复能实现翻译功能？</a>
-              	 					</div>
-              	 				</h2>
-              	 				<div class="ContentItem-status">
-              	 					<span class="ContentItem-statusItem">2017-03-30</span>
-              	 					<span class="ContentItem-statusItem">0 个回答</span>
-              	 					<span class="ContentItem-statusItem">1 个关注</span>
-              	 				</div>
-              	 			</div>
-              	 		</div>
-              	 	</div>
-              	 </div>
-              	 <!--  我的文章 -->
-              	 <div class="ProfileArticle">
-              	 	<div class="ProfileArticle-header clear">
-              	 		<ul class="ProfileArticle-nav">
-              	 			<li class="active">全部图文</li>
-              	 			<li>已发表</li>
-              	 			<li>未通过</li>
-              	 			<li>草稿</li>
-              	 			<li>已撤回</li>
-              	 		</ul>
-              	 		<div class="searchBox clear">
-              	 			<div class="ui icon input">
-              	 				<input class="prompt" type="text" name="search" placeholder="搜索你感兴趣的内容" />
-              	 			</div>
-              	 			<i class="search icon"></i>
-              	 		</div>
-                         </div>
-                         <div class="ProfileArticle-content">
-                                <div class="ProfileArticle-item">
-                                 <div class="ProfileArticle-word">
-                                  <h3>一定多给孩子吃这几样</h3>
-                                  <p class="ArticlewordItem"><span>已发表</span><i class="dian">•</i><span>2017-05-16 16:24</span></p>
-                                  <p class="ArticlewordItem">
-                                   <span>喜欢</span>
-                                   <span>1.3万</span>
-                                   <span>阅读1444</span>
-                                   <span>评论0</span>
-                                   <span>收藏25</span>
-                            </p>
-                            <p class="ArticlewordItem">
-                                   <span class="edit"><i class="write icon"></i>修改</span>
-                                   <span><i class="share icon"></i>转发</span>
-                                   <span><i class="more">•••</i>更多</span>
-                            </p>
-                     </div>
-                     <img class="ProfileArticle-img" src="images/love_5.png">
-              </div>
-       </div>
-</div>
+                <!--  我的提问 -->
+                <div class="List ProfileActivities" style="display:none">
+                    <div class="List-header">
+                        <h4 class="List-headerText"><span>我的提问</span></h4>
+                    </div>
+                    <div>
+                        <div class="List-item">
+                            <div class="ContentItem">
+                                <h2 class="ContentItem-title">
+                                    <div class="QuestionItem-title">
+                                        <a href="#">微信公众平台里 自动回复能实现翻译功能？</a>
+                                    </div>
+                                </h2>
+                                <div class="ContentItem-status">
+                                    <span class="ContentItem-statusItem">2017-03-30</span>
+                                    <span class="ContentItem-statusItem">0 个回答</span>
+                                    <span class="ContentItem-statusItem">1 个关注</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  我的文章 -->
+                <div class="ProfileArticle">
+                    <div class="ProfileArticle-header clear">
+                        <ul class="ProfileArticle-nav">
+                            <li class="active">全部图文</li>
+                            <li>已发表</li>
+                            <li>未通过</li>
+                            <li>草稿</li>
+                            <li>已撤回</li>
+                        </ul>
+                        <div class="searchBox clear">
+                            <div class="ui icon input">
+                                <input class="prompt" type="text" name="search" placeholder="搜索你感兴趣的内容" />
+                            </div>
+                            <i class="search icon"></i>
+                        </div>
+                    </div>
+                    <div class="ProfileArticle-content">
+                        <div class="ProfileArticle-item">
+                            <div class="ProfileArticle-word">
+                                <h3>一定多给孩子吃这几样</h3>
+                                <p class="ArticlewordItem"><span>已发表</span><i class="dian">•</i><span>2017-05-16 16:24</span></p>
+                                <p class="ArticlewordItem">
+                                    <span>喜欢</span>
+                                    <span>1.3万</span>
+                                    <span>阅读1444</span>
+                                    <span>评论0</span>
+                                    <span>收藏25</span>
+                                </p>
+                                <p class="ArticlewordItem">
+                                    <span class="edit"><i class="write icon"></i>修改</span>
+                                    <span><i class="share icon"></i>转发</span>
+                                    <span><i class="more">•••</i>更多</span>
+                                </p>
+                            </div>
+                            <img class="ProfileArticle-img" src="images/banner.jpg">
+                        </div>
+                    </div>
+                </div>
 
-<!--  -->
+                <!--  -->
 
-</div>
+            </div>
 
-</div>
-<div class="Profile-sideColumn">
- <div class="Card">
-  <div class="Card-header Profile-sideColumnTitle">
-   <div class="Card-headerText">个人成就</div>
-</div>
-<div class="Profile-sideColumnItems">
-   <div class="Profile-sideColumnItem">
-    <div class="IconGraf">
-     <i class="write square icon"></i>
-     <a href="#" class="Profile-sideColumnItemLink">参与了3次公共编辑</a>
-</div>
-</div>
-</div>
-</div>
+        </div>
+        <div class="Profile-sideColumn">
+            <div class="Card">
+                <div class="Card-header Profile-sideColumnTitle">
+                    <div class="Card-headerText">个人成就</div>
+                </div>
+                <div class="Profile-sideColumnItems">
+                    <div class="Profile-sideColumnItem">
+                        <div class="IconGraf">
+                            <i class="thumbs outline up icon"></i>
+                            <a href="#" class="Profile-sideColumnItemLink">获得了7,327次赞同</a>
+                            <p class="kong"> <a href="#" class="Profile-sideColumnItemLink">获得了 790 次感谢 ， 2,721 次收藏</a></p>
+                        </div>
+                        <div class="IconGraf">
+                            <i class="empty heart icon"></i>
+                            <a href="#" class="Profile-sideColumnItemLink">回答获得了1279万人阅读</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<div class="Card FollowshipCard">
-  <div class="NumberBoard FollowshipCard-counts NumberBoard--divider">
-   <a href="#" class="Button NumberBoard-item Button--plain">
-    <div class="NumberBoard-itemInner">
-     <div class="NumberBoard-itemName">关注了</div>
-     <strong class="NumberBoard-itemValue">0</strong>
-</div>
-</a>
-<a href="#" class="Button NumberBoard-item Button--plain">
-    <div class="NumberBoard-itemInner">
-     <div class="NumberBoard-itemName">关注了</div>
-     <strong class="NumberBoard-itemValue">0</strong>
-</div>
-</a>
-</div>
-</div>
-<div class="Profile-lightList">
-  <a href="#" class="Profile-lightItem">
-   <span class="Profile-lightItemName">关注的话题</span>
-   <span class="Profile-lightItemValue">2</span>
-</a>
-<a href="#" class="Profile-lightItem">
-       <span class="Profile-lightItemName">关注的话题</span>
-       <span class="Profile-lightItemValue">2</span>
-</a>
-<a href="#" class="Profile-lightItem">
-       <span class="Profile-lightItemName">关注的话题</span>
-       <span class="Profile-lightItemValue">2</span>
-</a>
-</div>
+            <div class="Card FollowshipCard">
+                <div class="NumberBoard FollowshipCard-counts NumberBoard--divider">
+                    <a href="#" class="Button NumberBoard-item Button--plain">
+                        <div class="NumberBoard-itemInner">
+                            <div class="NumberBoard-itemName">关注了</div>
+                            <strong class="NumberBoard-itemValue">86</strong>
+                        </div>
+                    </a>
+                    <a href="#" class="Button NumberBoard-item Button--plain">
+                        <div class="NumberBoard-itemInner">
+                            <div class="NumberBoard-itemName">关注了</div>
+                            <strong class="NumberBoard-itemValue">56</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="Profile-lightList">
+                <a href="#" class="Profile-lightItem">
+                    <span class="Profile-lightItemName">手机为何充不进电？</span>
+                    <span class="Profile-lightItemValue">24</span>
+                </a>
+                <a href="#" class="Profile-lightItem">
+                    <span class="Profile-lightItemName">市场营销的策略方法？</span>
+                    <span class="Profile-lightItemValue">53</span>
+                </a>
+                <a href="#" class="Profile-lightItem">
+                    <span class="Profile-lightItemName">如何把梳子卖给和尚？</span>
+                    <span class="Profile-lightItemValue">68</span>
+                </a>
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 
 </div>
