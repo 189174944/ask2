@@ -39,6 +39,8 @@ h1,h2{
     margin-right: -5px;
     padding: 1px 0;
 }
+.QuestionHeader-topics span a{color: rgba(51, 139, 255, 0.70)
+}
 .QuestionHeader-tags, .QuestionHeader-topics {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -186,12 +188,12 @@ h1,h2{
 .followAuthor p{margin-bottom: 5px;}
 .thin{color: #7a7a7a;}
 .authorImg{width: 64px !important;height: 64px !important;margin: 0 20px 0 30px;}
-.followAuthor-word{width: 45%;margin-top:20px}
+.followAuthor-word{width:65%;margin-top:20px}
 .followAuthor-word .name{margin-bottom: 14px;font-size: 14px;}
 .followAuthor-word .name strong{font-size: 18px;color: #000;margin-right: 8px;}
 .followAuthor-word .wordItem >span,.followAuthor-word .wordItem >.icon{margin-right: 8px;}
 .wordItem.togle a{color: rgba(51, 139, 255, 0.76);}
-.fllowButtonBox{margin-left:17%;}
+.fllowButtonBox{margin-left:7%;}
 .followTopic{font-size: 12px;line-height: 1.5;padding-bottom: 20px;}
 .followTopic h4{margin-bottom: 8px;}
 .followTopic p{margin-bottom: 5px;}
