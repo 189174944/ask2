@@ -975,6 +975,8 @@ h1,h2{
 /*添加样式*/
 .kong{text-indent:2em;}
 .kong a{color: #999999;}
+.ProfileArticleMain .ProfileArticle-content{display:none;}
+.ProfileArticleMain .ProfileArticle-content:nth-child(1){display:block;}
 /*添加样式end*/
 /* 编辑资料 end */
 
