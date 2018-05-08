@@ -948,6 +948,7 @@ h1,h2{
     line-height: 24px;
     cursor: move;
 }
+.Field-card img{border-radius: 2px;}
 .Field-card span {
     margin-left: 12px;
     font-size: 15px;

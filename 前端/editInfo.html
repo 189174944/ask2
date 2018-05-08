@@ -7,40 +7,38 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/semantic.js"></script>
 
 </head>
 <body>
-	<div class="gudin">
-		<div class="pageIndex">
-			<div class="page-right">
-				<div class="nav-top">
-					<form action="./" method="get">
-						<div class="ui icon input">
-							<input class="prompt" type="text" name="search" placeholder="搜索你感兴趣的内容" />
-							<i class="search icon"></i>
-						</div>&nbsp; &nbsp;
-						<div class="tiwen"><input type="submit" class="ui primary button " value="提问"></div>
-						<div class="choice"><i class="idea icon"></i>回答</div>
-						<div class="choice"><a href="http://192.168.10.103/ui27/addxinzhi.html" ><i class="edit icon"></i>写文章</a></div>
-						<div class="choice news">消息<span class="label">19</span></div>
-						<div class="login">
-							<ul>
-								<li><a href="#"> 注册 </a> | <a href="#"> 登录 </a></li>
+<div class="gudin">
+    <div class="pageIndex">
+        <div class="page-right">
+            <div class="nav-top">
+                <div class="logo-img"><a href="./"> <img src="images/logo.png"></a></div>
+                <form action="./" method="get">
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" name="search" placeholder="搜索你感兴趣的内容" />
+                        <i class="search icon"></i>
+                    </div>&nbsp; &nbsp;
+                    <div class="tiwen"><input type="submit" class="ui primary button " value="提问"></div>
+                    <div class="choice"><i class="idea icon"></i>回答</div>
+                    <div class="choice"><a href="http://192.168.10.103/ui27/addxinzhi.html" ><i class="edit icon"></i>写文章</a></div>
+                    <div class="choice news">消息<span class="label">19</span></div>
+                    <div class="login">
+                        <ul>
+                            <li><a href="#"> 注册 </a> | <a href="#"> 登录 </a></li>
 
-							</ul>
-						</div>
+                        </ul>
+                    </div>
 
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 	<!--头部结束-->
-
 	<div class="contentBox clear ">
 		<div class="ProfileHeader-main">
 			<div>
@@ -57,10 +55,9 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="ProfileHeader-content">
 				<div class="ProfileHeader-contentHead">
-					<h1 class="ProfileHeader-title">我的名字</h1>
+					<h1 class="ProfileHeader-title"> 李秀莲 </h1>
 					<div class="ProfileHeader-expandActions ProfileEdit-expandActions">
 						<a href="#" class="Button--plain">返回我的主页<i class="angle right icon"></i></a>
 					</div>
@@ -84,7 +81,7 @@
 								<input name="gender" type="radio" value="男" />男
 								<input name="gender" style="margin-left: 30px;" type="radio" value="女" />女
 								<div class="ButtonGroup">
-									<button class="ui primary button">确定</button>
+									<button class="ui primary button">保存</button>
 									<button class="ui button">取消</button>
 								</div>
 							</div>
@@ -110,7 +107,7 @@
 									<input class="prompt" type="text" name="search" placeholder="介绍" />
 								</div>
 								<div class="ButtonGroup">
-									<button class="ui primary button">确定</button>
+									<button class="ui primary button">保存</button>
 									<button class="ui button">取消</button>
 								</div>
 							</div>
@@ -137,7 +134,7 @@
 									<input class="prompt" type="text" name="search" placeholder="地址" />
 								</div>
 								<div class="">
-									<button class="ui primary button">确定</button>
+									<button class="ui primary button">保存</button>
 									<button class="ui button">取消</button>
 								</div>
 							</div>
@@ -160,25 +157,61 @@
 								</span>
 							</div>
 							<div>
-								<div class="Popover">
-									<button class="Button Select-button">
-									互联网
-									<span class="inline iconUpDown clear">
-              	 					<i class="angle up icon"></i>
-              	 					<i class="angle down icon"></i>
-              	 				</span></button>
-              	 				<div class="Popover-content" style="display:none">
-              	 				<div class="Select-list">
-              	 					<div class="Select-option">高新科技</div>
-              	 					<div class="Select-option">高新科技</div>
-              	 					<div class="Select-option">高新科技</div>
-              	 					<div class="Select-option">高新科技</div>
-              	 					<div class="Select-option">高新科技</div>
-              	 					<div class="Select-option">高新科技</div>
-              	 					<div class="Select-option">高新科技</div>
-              	 				</div>
-              	 				</div>
-								</div>
+
+                                <select class="ui search dropdown">
+                                    <option value="" data-filtered="filtered">互联网</option>
+                                    <option value="AL" data-filtered="filtered">电商</option>
+                                    <option value="AK" data-filtered="filtered">金融</option>
+                                    <option value="AZ" data-filtered="filtered">测试</option>
+                                    <option value="AR" data-filtered="filtered">美工</option>
+                                    <option value="CA" data-filtered="filtered">IT</option>
+                                    <option value="CO" data-filtered="filtered">电子竞技</option>
+                                    <option value="CT" data-filtered="filtered">Connecticut</option>
+                                    <option value="DE" data-filtered="filtered">机械</option>
+                                    <option value="DC" data-filtered="filtered">普工</option>
+                                    <option value="FL" data-filtered="filtered">律师</option>
+                                    <option value="GA" data-filtered="filtered">广播电视</option>
+                                    <option value="HI" data-filtered="filtered">出版社</option>
+                                    <option value="ID" data-filtered="filtered">媒体</option>
+                                    <option value="IL" data-filtered="filtered">银行</option>
+                                    <option value="IN" data-filtered="filtered">通讯</option>
+                                    <option value="IA" data-filtered="filtered">教师</option>
+                                    <option value="KS" data-filtered="filtered">保险</option>
+                                    <option value="KY" data-filtered="filtered">投资</option>
+                                    <option value="LA" data-filtered="filtered">汽车</option>
+                                    <option value="ME" data-filtered="filtered">模特</option>
+                                    <option value="MD" data-filtered="filtered">时装</option>
+                                    <option value="MA" data-filtered="filtered">Massachusetts</option>
+                                    <option value="MI" data-filtered="filtered">设计</option>
+                                    <option value="MN" data-filtered="filtered">会计</option>
+                                    <option value="MS" data-filtered="filtered">Mississippi</option>
+                                    <option value="MO" data-filtered="filtered">客服</option>
+                                    <option value="MT" data-filtered="filtered">公关</option>
+                                    <option value="NE" data-filtered="filtered">广告</option>
+                                    <option value="NV" data-filtered="filtered">旅游</option>
+                                    <option value="NV" data-filtered="filtered">其他</option>
+                                </select>
+
+								<!--<div class="Popover">-->
+									<!--<button class="Button Select-button">-->
+									<!--互联网-->
+									<!--<span class="inline iconUpDown clear">-->
+              	 					<!--<i class="angle up icon"></i>-->
+              	 					<!--<i class="angle down icon"></i>-->
+              	 				<!--</span></button>-->
+              	 				<!--<div class="Popover-content" style="display:none">-->
+
+              	 				<!--<div class="Select-list">-->
+              	 					<!--<div class="Select-option">高新科技</div>-->
+              	 					<!--<div class="Select-option">123</div>-->
+              	 					<!--<div class="Select-option">1231</div>-->
+              	 					<!--<div class="Select-option">123123</div>-->
+              	 					<!--<div class="Select-option">高阿瑟的新科技</div>-->
+              	 					<!--<div class="Select-option">1321</div>-->
+              	 					<!--<div class="Select-option">高231新科技</div>-->
+              	 				<!--</div>-->
+              	 				<!--</div>-->
+								<!--</div>-->
 							</div>
 						
 						</div>
@@ -193,9 +226,9 @@
 							</div>
 							<div class="Field-list">
 								<div class="Field-card">
-									<img src="images/content-img-1.png" width="20" height="20">
+									<img src="images/love_5.png" width="20" height="20" >
 									<span>
-									这家公司<span class="Field-dot">·</span>开发
+									森马科技有限公司<span class="Field-dot">·</span>开发
 									</span>
 								</div>
 							</div>
@@ -207,7 +240,7 @@
 									<input class="prompt" type="text" name="search" placeholder="职位" />
 								</div>
 								<div class="">
-									<button class="ui primary button">确定</button>
+									<button class="ui primary button">保存</button>
 									<button class="ui button">取消</button>
 								</div>
 							</div>
@@ -224,9 +257,9 @@
 							</div>
 							<div class="Field-list">
 								<div class="Field-card">
-									<img src="images/content-img-1.png" width="20" height="20">
+									<img src="images/love_4.png" width="20" height="20">
 									<span>
-									这家学校<span class="Field-dot">·</span>睡觉
+									灵犀科技有限公司<span class="Field-dot">·</span>架构师
 									</span>
 								</div>
 							</div>
@@ -238,7 +271,7 @@
 									<input class="prompt" type="text" name="search" placeholder="专业" />
 								</div>
 								<div class="">
-									<button class="ui primary button">确定</button>
+									<button class="ui primary button">保存</button>
 									<button class="ui button">取消</button>
 								</div>
 							</div>
@@ -262,7 +295,7 @@
 							<div  style="display:none">
 								<textarea class="DescriptionField-input TextArea" rows="3"></textarea>
 								<div class="ButtonGroup">
-									<button class="ui primary button">确定</button>
+									<button class="ui primary button">保存</button>
 									<button class="ui button">取消</button>
 								</div>
 							</div>
