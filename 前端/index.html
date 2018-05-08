@@ -17,10 +17,9 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/semantic.js"></script>
     <link href="css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/share.css" type="text/css" />
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/share.js" type="text/javascript"></script>
-
+    <link rel="stylesheet" href="css/share.css" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
 <div class="gudin">
@@ -40,10 +39,8 @@
                     <div class="login">
                         <ul>
                             <li><a href="#"> 注册 </a> | <a href="#"> 登录 </a></li>
-
                         </ul>
                     </div>
-
                 </form>
             </div>
         </div>
@@ -70,26 +67,31 @@
                             <a href="javascript:;" class="sumTxt" >全文</a>
                             <a href="javascript:;" class="Takeup">收起</a>
                         </p>
+
                         <div class="operation">
-                            <span><i class="thumbs up icon"></i>666赞</span>
-                            <span><i class="thumbs down icon"></i>踩</span>
+
+
+
+                            <span><i class="thumbs up icon img26"></i><span class="likes" class="p">&nbsp;</span></span>
+                            <span><i class="thumbs down icon"></i><span class="cai" class="p">&nbsp;</span></span>
                             <span><i class="talk outline icon"></i>48评论</span>
                             <span class="shareHover">
                                     <span class="fenx"><i class="share icon"></i>分享</span>
                                     <span class="shareTogle">
-                                        <div class="tank ">
-                                            <ul>
-                                                <li>
-                                                    <span class="item itemRow qZone"><i class="qq icon"></i>空间</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow sina"><i class="weibo icon"></i>微博</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow weixin"><i class="wechat icon"></i>微信</span>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                          <div class="tank ">
+                                              <ul>
+                                                  <li>
+                                                      <span class="item itemRow one" onclick="one()"><i class="qq icon"></i>空间</span>
+                                                  </li>
+                                                  <li>
+                                                      <span class="item itemRow sina"><i class="weibo icon"></i>微博</span>
+
+                                                  </li>
+                                                  <li>
+                                                      <span class="item itemRow weixin"><i class="wechat icon"></i>微信</span>
+                                                  </li>
+                                              </ul>
+                                          </div>
                                     </span>
                              </span>
 
@@ -103,9 +105,6 @@
                     <!-- <img src="tp.png" alt="图片" class="content-item-img"> -->
                 </div>
             </div>
-
-
-
             <div class="content-item">
                 <a href="http://192.168.10.103/ui27/article.html" target="_blank"><h3>怎么把皮肤养成瓷娃娃一样的牛奶肌肤？</h3></a>
                 <p class="titleTips">
@@ -124,16 +123,16 @@
                             <a href="javascript:;" class="Takeup">收起</a>
                         </p>
                         <div class="operation">
-                            <span><i class="thumbs up icon"></i>666赞</span>
-                            <span><i class="thumbs down icon"></i>踩</span>
-                            <span><i class="talk outline icon"></i>48评论</span>
+                            <span><i class="thumbs up icon img26"></i><span class="likes" class="p">&nbsp;</span></span>
+                            <span><i class="thumbs down icon"></i><span class="cai" class="p">&nbsp;</span></span>
+                            <span><i class="talk outline icon"></i>418评论</span>
                             <span class="shareHover">
                                     <span><i class="share icon"></i>分享</span>
                                     <span class="shareTogle">
                                         <div class="tank ">
                                             <ul>
                                                 <li>
-                                                    <span class="item itemRow qZone"><i class="qq icon"></i>空间</span>
+                                                    <span class="item itemRow one" onclick="one()"><i class="qq icon"></i>空间</span>
                                                 </li>
                                                 <li>
                                                     <span class="item itemRow sina"><i class="weibo icon"></i>微博</span>
@@ -173,8 +172,8 @@
                             </div>
 
                             <div class="operation">
-                                <span><i class="thumbs up icon"></i>666赞</span>
-                                <span><i class="thumbs down icon"></i>踩</span>
+                                <span><i class="thumbs up icon img26"></i><span class="likes" class="p">&nbsp;</span></span>
+                                <span><i class="thumbs down icon"></i><span class="cai" class="p">&nbsp;</span></span>
                                 <span><i class="talk outline icon"></i>48评论</span>
                                 <span class="shareHover">
                                     <span><i class="share icon"></i>分享</span>
@@ -182,7 +181,7 @@
                                         <div class="tank ">
                                             <ul>
                                                 <li>
-                                                    <span class="item itemRow qZone"><i class="qq icon"></i>空间</span>
+                                                    <span class="item itemRow one" onclick="one()"><i class="qq icon"></i>空间</span>
                                                 </li>
                                                 <li>
                                                     <span class="item itemRow sina"><i class="weibo icon"></i>微博</span>
@@ -266,25 +265,44 @@
 
 </div>
 
-<!--<script>-->
-<!--window._bd_share_config = {-->
-<!--//此处添加分享具体设置-->
-<!--share : [{-->
-<!--"tag" : "share_1",-->
-<!--"bdSize" : 64-->
-<!--}],-->
-<!--selectShare : [{-->
-<!--"bdSelectMiniList" : ['qzone','tqq','kaixin001','bdxc','tqf'],-->
-<!--"bdContainerClass" : "shareTogle"-->
-<!--}]-->
-<!--}-->
-
-
-<!--//以下为js加载部分-->
-<!--with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];-->
-<!--</script>-->
 
 </body>
+
+<!--赞-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(function () {
+        for (var i = 0; i < $('.likes').length; i++) {
+            var ran = 120;
+//			var ran = Math.floor(Math.random() * 22 + 1)
+            $('.likes').eq(i).text(ran)
+        }
+        $(".img26").click(function () {
+            var num = $(this).next().text()
+            num++;
+            $(this).next().text(num);
+        });
+    });
+</script>
+
+<!--踩-->
+<script type="text/javascript">
+    $(function () {
+        for (var i = 0; i < $('.cai').length; i++) {
+            var ran = 13;
+//			var ran = Math.floor(Math.random() * 22 + 1)
+            $('.cai').eq(i).text(ran)
+        }
+        $(".down").click(function () {
+            var num = $(this).next().text()
+            num++;
+            $(this).next().text(num);
+        });
+    });
+</script>
+
+
+
 <script type="text/javascript">
     //需要添加展开收起的添加四个类 ，父元素 .wordTogle  文字 .text  全文.sumTxt  收起.Takeup
     var content_arr=[];
@@ -332,104 +350,96 @@
         })
 </script>
 
-<!--截取分享-->
-<script>
-    window._bd_share_config={
-        "common":{
-            "bdSnsKey":{},
-            "bdText":"",
-            "bdMini":"2",
-            "bdPic":"",
-            "bdStyle":"0",
-            "bdSize":"16"
-        },"share":{},
-        "image":{
-            "viewList":["qzone","tsina","tqq","renren","weixin"],
-            "viewText":"分享到：",
-            "viewSize":"16"},
-        "selectShare":{
-            "bdContainerClass":null,
-            "bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};
-    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
 
-    var baiduShare = {
-        ele: {
-            weixinEle: $(".article-content .bds_weixin")
-        },
-        init: function () {
-            baiduShare.ele.weixinEle.bind("click", baiduShare.clickFun);
-        },
-        clickFun: function () {
-            $(".bd_weixin_popup").css({"opacity": "0"});
-            var _this = $(this);
-            var left = Math.ceil(_this.offset().left - 1160);
-            var top = Math.ceil(_this.offset().top + 1140);
-            setTimeout(function () {
-                $("#bdshare_weixin_qrcode_dialog_bg").remove();
-                $(".bd_weixin_popup").after($(".bd_weixin_popup").prop("outerHTML")).remove();
-                $(".bd_weixin_popup").css({"left": left, "top": top, "opacity": "1"});
-                if ($(window).width() > 992) {
-                    $(window).scroll(function () {
-                        if ($(window).scrollTop() >= 1) {
-                            $(".bd_weixin_popup").css({"top": top - 1160});
-                        } else {
-                            $(".bd_weixin_popup").css({"top": top});
-                        }
-                    });
-                } else if ($(window).width() < 380) {
-                    var small_left = ($(window).width() - 255) / 2;
-                    $(".bd_weixin_popup").css({"left": small_left});
-                }
-                $(".bd_weixin_popup .bd_weixin_popup_close").click(function () {
-                    $(".bd_weixin_popup").hide()
-                });
-            }, 1000);
-            $(window).resize(function () {
-                var left = Math.ceil(_this.offset().left - 60);
-                var top = Math.ceil(_this.offset().top + 40);
-                $(".bd_weixin_popup").css({"left": left, "top": top, "opacity": "1"});
-            })
-        }
-    };
-    baiduShare.init();
+
+
+
+
+
+<!--&lt;!&ndash;截取分享&ndash;&gt;-->
+<!--<script>-->
+    <!--window._bd_share_config={-->
+        <!--"common":{-->
+            <!--"bdSnsKey":{},-->
+            <!--"bdText":"",-->
+            <!--"bdMini":"2",-->
+            <!--"bdPic":"",-->
+            <!--"bdStyle":"0",-->
+            <!--"bdSize":"16"-->
+        <!--},"share":{},-->
+        <!--"image":{-->
+            <!--"viewList":["qzone","tsina","tqq","renren","weixin"],-->
+            <!--"viewText":"分享到：",-->
+            <!--"viewSize":"16"},-->
+        <!--"selectShare":{-->
+            <!--"bdContainerClass":null,-->
+            <!--"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};-->
+    <!--with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];-->
+
+    <!--var baiduShare = {-->
+        <!--ele: {-->
+            <!--weixinEle: $(".article-content .bds_weixin")-->
+        <!--},-->
+        <!--init: function () {-->
+            <!--baiduShare.ele.weixinEle.bind("click", baiduShare.clickFun);-->
+        <!--},-->
+        <!--clickFun: function () {-->
+            <!--$(".bd_weixin_popup").css({"opacity": "0"});-->
+            <!--var _this = $(this);-->
+            <!--var left = Math.ceil(_this.offset().left - 1160);-->
+            <!--var top = Math.ceil(_this.offset().top + 1140);-->
+            <!--setTimeout(function () {-->
+                <!--$("#bdshare_weixin_qrcode_dialog_bg").remove();-->
+                <!--$(".bd_weixin_popup").after($(".bd_weixin_popup").prop("outerHTML")).remove();-->
+                <!--$(".bd_weixin_popup").css({"left": left, "top": top, "opacity": "1"});-->
+                <!--if ($(window).width() > 992) {-->
+                    <!--$(window).scroll(function () {-->
+                        <!--if ($(window).scrollTop() >= 1) {-->
+                            <!--$(".bd_weixin_popup").css({"top": top - 1160});-->
+                        <!--} else {-->
+                            <!--$(".bd_weixin_popup").css({"top": top});-->
+                        <!--}-->
+                    <!--});-->
+                <!--} else if ($(window).width() < 380) {-->
+                    <!--var small_left = ($(window).width() - 255) / 2;-->
+                    <!--$(".bd_weixin_popup").css({"left": small_left});-->
+                <!--}-->
+                <!--$(".bd_weixin_popup .bd_weixin_popup_close").click(function () {-->
+                    <!--$(".bd_weixin_popup").hide()-->
+                <!--});-->
+            <!--}, 1000);-->
+            <!--$(window).resize(function () {-->
+                <!--var left = Math.ceil(_this.offset().left - 60);-->
+                <!--var top = Math.ceil(_this.offset().top + 40);-->
+                <!--$(".bd_weixin_popup").css({"left": left, "top": top, "opacity": "1"});-->
+            <!--})-->
+        <!--}-->
+    <!--};-->
+    <!--baiduShare.init();-->
+<!--</script>-->
+
+<!--//分享到QQ空间-->
+<script type="text/javascript">
+
+    //分享到QQ空间
+    function one(){
+        var share1=new ShareTip();
+        share1.sharetoqqzone(
+                "问答首页",
+                "http://192.168.10.104/ui27/index.html",
+                "http://192.168.10.104/ui27/images/content-img-1.png"
+        );
+    }
+
+    var ShareTip = function()  {};
+    //分享到QQ空间
+    ShareTip.prototype.sharetoqqzone=function(title,url,picurl)
+    {
+        var shareqqzonestring='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary='+title+'&url='+url+'&pics='+picurl;
+        window.open(shareqqzonestring,'newwindow','height=400,width=400,top=100,left=100');
+    }
 </script>
-截取分享
-
-<script>
-    ////    分享到QQ空间
-    //    $("#zone").click(function(){
-    //        ;    var p = {
-    //            url:location.href,
-    //            showcount:'1',/*是否显示分享总数,显示：'1'，不显示：'0' */
-    //            desc:'',/*默认分享理由(可选)*/
-    //            summary:'我在【空间家】上找到一个好位置，地段好又划算，快来看看吧！',/*分享摘要(可选)*/
-    //            title:'<%$info.title%>',/*分享标题(可选)*/
-    //            site:'空间家',/*分享来源 如：腾讯网(可选)*/
-    //            pics:'__IMG__<%$info.img.0.url%>', /*分享图片的路径(可选)*/
-    //            style:'203',
-    //            width:98,
-    //            height:22
-    //        };
-    //        var s = [];
-    //        for(var i in p){
-    //            s.push(i + '=' + encodeURIComponent(p[i]||''));
-    //        }
-    //        window.open("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?"+s.join('&'));
-    //    });
-    ////分享到新浪微博
-    //$('#blog').click(function(){
-    //    window.sharetitle = '<%$info.title%>';//标题
-    //    window.shareUrl = '__IMG__<%$info.img.0.url%>';//缩略图
-    //    share();
-    //});
-    //function share(){
-    //    //d指的是window
-    //    (function(s,d,e){try{}catch(e){}var f='http://v.t.sina.com.cn/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(window.sharetitle),'&appkey=2924220432','&pic=',e(window.shareUrl)].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent);
-    //}
-
-</script>
-
-
+<script src="js/share.js" type="text/javascript"></script>
 <!--jq的分享-->
 <script>
 
