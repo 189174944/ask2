@@ -183,14 +183,14 @@ h1,h2{
 .followNav-item.active:after{content:"";display: block;height: 2px;width: 100%;background-color: #646464;position: absolute;bottom: -2px;left: 0;z-index: 2;}
 .button.follow{float: right;color:#fff;font-size:14px;background-color: #68bd46;text-align: center;margin-top: 12px;margin-bottom: 13px !important;border-radius: 20px !important;padding: 8px 18px !important;font-weight: 500 !important;}
 .button.follow:hover{color:#fff;background-color: #68bd46;}
-.followAuthor{color: #2b2b2b;padding-bottom:2px;font-size: 12px;background-color: #fff;}
+.followAuthor{color: #212121;padding-bottom:2px;font-size: 13px;background-color: #fff;}
 .followAuthor-item{margin-top: 20px;}
 .followAuthor p{margin-bottom: 5px;}
 .thin{color: #7a7a7a;}
 .authorImg{width: 64px !important;height: 64px !important;margin: 0 20px 0 30px;}
 .followAuthor-word{width:65%;margin-top:20px}
-.followAuthor-word .name{margin-bottom: 14px;font-size: 14px;}
-.followAuthor-word .name strong{font-size: 18px;color: #000;margin-right: 8px;}
+.followAuthor-word .name{margin-bottom: 14px;font-size: 16px;}
+.followAuthor-word .name strong{font-size:22px;color: #000;margin-right: 8px;}
 .followAuthor-word .wordItem >span,.followAuthor-word .wordItem >.icon{margin-right: 8px;}
 .wordItem.togle a{color: rgba(51, 139, 255, 0.76);}
 .fllowButtonBox{margin-left:7%;}
@@ -211,7 +211,7 @@ h1,h2{
 }
 .personalContent .followAuthor-item{
     margin: 0;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
 }
 .Button--plain{
     color: gray
@@ -267,7 +267,7 @@ h1,h2{
 }
 .Tabs-item {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .Tabs-link {
@@ -331,6 +331,8 @@ h1,h2{
 .List-item {
     position: relative;
     padding: 16px 20px;
+    border-bottom: solid 1px #f4f4f4;
+
 }
 .List-itemMeta {
     margin-bottom: 10px;
@@ -358,11 +360,17 @@ h1,h2{
 .Popover {
     position: relative;
     display: inline-block;
+    margin-bottom: 8px;
 }
 .Avatar--large {
     border-radius: 4px;
-    width: 60px;
-    height: 60px;
+    width:50px;
+    height: 50px;
+}
+.Avatar--large-content {
+    border-radius: 4px;
+    width:160px;
+    height:100px;
 }
 .ContentItem-head {
     -webkit-box-flex: 1;
@@ -908,6 +916,7 @@ float: right;
 .Field .iconUpDown {
     margin-top: -2px;
 }
+.List-item-title a{font-size: 20px;font-weight: 600;}
 .Popover-content{
     position: absolute;
     background: #fff;
@@ -1106,8 +1115,8 @@ float: right;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
-
-
+.ContentItem-content{font-size: 14px;letter-spacing: 0.8px;color: #222;line-height: 25px}
+.content-zan{height:30px;line-height: 20px;color:#666666;}
 
 
 

@@ -87,7 +87,7 @@ width: 100%;height: auto;background: #ffffff;
     letter-spacing:1px;
 }
 .operation{
-    position: relative;
+    /*position: relative;*/
     clear:both;
 	color:#c8c8c8;
 	margin:10px 0 0;
