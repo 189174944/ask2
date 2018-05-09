@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写文章</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/semantic.js"></script>
+
+      <!-- 编辑 -->
+  <script type="text/javascript" charset="utf-8" src="js/utf8-php/ueditor.config.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/utf8-php/ueditor.all.min.js"> </script>
+  <script type="text/javascript" charset="utf-8" src="js/utf8-php/lang/zh-cn.js"></script>
+
+</head>
+<body>
+<div class="gudin">
+    <div class="pageIndex">
+        <div class="page-right">
+            <div class="nav-top">
+                <div class="logo-img"><a href="./"> <img src="images/logo.png"></a></div>
+                <form action="./" method="get">
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" name="search" placeholder="搜索你感兴趣的内容" />
+                        <i class="search icon"></i>
+                    </div>&nbsp; &nbsp;
+                    <div class="tiwen"><input type="submit" class="ui primary button " value="提问"></div>
+                    <div class="choice"><i class="idea icon"></i>回答</div>
+                    <div class="choice"><a href="http://192.168.10.103/ui27/addxinzhi.html" ><i class="edit icon"></i>写文章</a></div>
+                    <div class="choice news">消息<span class="label">19</span></div>
+                    <div class="login">
+                        <ul>
+                            <li><a href="#"> 注册 </a> | <a href="#"> 登录 </a></li>
+
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+
+<div class="contentBox clear" style="max-width: 960px;">
+   <div class="List-header">
+        <h4 class="List-headerText" style="color:#666;"><span>写文章</span></h4>
+    </div>
+   <div class="writePage">
+        <div class="relative heading">
+            <input class="headingInput" maxlength="30" placeholder="标题5-30个字符" />
+            <span><i class="wordNumb">0</i>/30</span>
+        </div>
+ <script id="editor" type="text/plain" style="width:98%;height:300px;"></script>
+
+<div class="wordItem">
+    <text class="inline name">绑定话题</text>
+    <div class="inline clear topicBox">
+        <span class="inline topicBoxList">
+            <span class="topicBoxItem">计算机专业<i class="remove icon"></i></span>
+        </span>
+        <input placeholder="添加话题(1/5)" />
+        <i class="search icon"></i>
+    </div>
+</div>
+
+<div class="wordItem">
+    <text class="inline name">封面</text>
+    <div class="inline clear addImgBox">
+        <div class="upImg">
+            <i class="plus icon"></i>
+        </div>
+    </div>
+</div>
+<div class="botBox">
+    <div class="imgTips">优质的的狂欢节奥斯卡三等奖卡是</div>
+<div class="botBut">
+    <button class="ui red button">发表</button>
+     <button class="ui button">存草稿</button>
+      <button class="ui button">客户端预览</button>
+       <button class="ui button">取消</button>
+</div>
+</div>
+
+   </div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+// 标题
+$(".headingInput").on("input",function(e){
+    var text=$(this).val();
+    var len=text.length;
+    $(".wordNumb").text(len)
+})
+
+
+// 编辑器
+      var ue = UE.getEditor('editor', {
+    toolbars: [
+        ['bold', 'italic','fontsize', 'inserthtml', 'blockquote', ' insertcode','insertorderedlist','insertunorderedlist','link','insertimage','imagefloat','insertvideo','horizontal','formatmatch']  // http://ueditor.baidu.com/doc/ 替换需要的
+    ],
+    autoHeightEnabled: true,
+    autoFloatEnabled: true
+});
+
+
+</script>
+
+
+
+</body>
+</html>
