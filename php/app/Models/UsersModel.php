@@ -17,7 +17,20 @@ class UsersModel extends Model
         return $this->belongsToMany(TopicModel::class, 'ask_users_topic', 'users_id', 'topic_id');
     }
 
-    public function special(){
-        return $this->hasOne(SpecialModel::class,'id','is_special');
+    public function special()
+    {
+        return $this->hasOne(SpecialModel::class, 'id', 'is_special');
+    }
+
+//    用户关注的作者
+    public function author()
+    {
+        return $this->belongsToMany(UsersModel::class, 'ask_users_author', 'users_id', 'author_id');
+    }
+
+//    作者拥有的粉丝
+    public function fans()
+    {
+        return $this->belongsToMany(UsersModel::class, 'ask_users_author', 'author_id', 'users_id');
     }
 }

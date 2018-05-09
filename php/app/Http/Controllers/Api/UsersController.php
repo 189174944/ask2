@@ -7,7 +7,6 @@ use App\Http\Controllers\Controller;
 
 class UsersController extends Controller
 {
-
     /*
      * 名称:用户注册
      * 方法：posts
