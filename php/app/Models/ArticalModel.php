@@ -10,6 +10,9 @@ class ArticalModel extends Model
     protected $fillable = [
         'id', 'users_id', 'type', 'title', 'content', 'coverpic', 'status', 'price', 'is_blocked', 'blocked_reason', 'visitornum', 'is_anonymous', 'latest_comment', 'is_lock', 'created_at', 'updated_at', 'deleted_at'
     ];
+    protected $appends = [
+        'commentCount'
+    ];
 
     public function topic()
     {
@@ -24,5 +27,9 @@ class ArticalModel extends Model
     public function comment()
     {
         return $this->hasMany(CommentModel::class, 'artical_id', 'id');
+    }
+    public function getCommentCountAttribute()
+    {
+        return $this->hasMany(CommentModel::class, 'artical_id', 'id')->count();
     }
 }
