@@ -207,7 +207,7 @@ h1,h2{
 /* 我的主页 start */
 .personalContent{
     background: #ffffff;
-    padding-top: 0
+    /*padding-top: 0*/
 }
 .personalContent .followAuthor-item{
     margin: 0;
@@ -241,6 +241,9 @@ h1,h2{
     border: solid 1px #3285f7;
     line-height: 30px;
     padding: 0 15px;
+}
+.editButton a{
+    color: rgba(51, 139, 255, 0.79);
 }
 .Profile-mainColumn{
     width: 70%;
@@ -524,7 +527,7 @@ h1,h2{
 /*我的文章*/
 .ProfileArticle-header{
     /*border-bottom: solid 1px #dedede;*/
-    padding: 0 20px;
+    padding:0 20px ;
 }
 .ProfileArticle-nav{
     display: inline-block;
@@ -707,8 +710,9 @@ h1,h2{
 }
 
 .ProfileArticle-item{
-    padding: 20px;
+    padding: 20px 60px  20px 20px;
     color: #888888;
+    border-bottom: solid 1px #f1f1f1;
 }
 .ProfileArticle-word{
     width: 74%;
@@ -718,17 +722,21 @@ h1,h2{
 }
 
 .ProfileArticle-img{
-    width: 23%;
+float: right;
+    width:18%;
     height: 100px;
 }
 .ProfileArticle-word p{
-    margin-bottom: 5px;
+    margin-left:-6px;
+    color: #666666;
 }
 .ProfileArticle-word h3{
-    margin-bottom: 5px;
+    margin-bottom:10px;
+    font-weight: 600;
     color: #1a1a1a;
-    font-size: 16px;
+    font-size: 18px;
 }
+
 .ArticlewordItem>span{
     margin:0 6px;
 }
@@ -736,7 +744,7 @@ h1,h2{
     font-size: 10px;
 }
 .ArticlewordItem .edit{
-    color: #B8B8B8;
+    color:#666666;
 }
 .ArticlewordItem .more{
     font-size: 12px;
