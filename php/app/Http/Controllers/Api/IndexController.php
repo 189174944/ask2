@@ -17,6 +17,7 @@ class IndexController extends Controller
             $query->select(['id', 'nickname', 'avatar', 'is_special']);
         }])->paginate();
 
+
         return response()->json([
             'code' => 1,
             'info' => '获取成功',
