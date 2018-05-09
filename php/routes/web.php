@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', function () {
-    dd(\App\Models\UsersModel::find(1)->topic()->get());
+    dd(\App\Models\UsersModel::where('id',1)->with('author')->get()->toArray());
 });
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['web']], function () {

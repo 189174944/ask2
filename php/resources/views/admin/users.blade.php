@@ -6,22 +6,25 @@
             用户管理
         </h5>
     </div>
-    <div class="ui segment">
-        <div class="ui fluid action input">
-            <input type="text" placeholder="Search...">
-            <div class="ui button">搜索</div>
-        </div>
-    </div>
+    {{--<div class="ui segment">--}}
+    {{--<div class="ui fluid action input">--}}
+    {{--<input type="text" placeholder="Search...">--}}
+    {{--<div class="ui button">搜索</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
     <div class="ui segment">
         <table id="data_table" class="ui compact selectable striped celled table tablet stackable" cellspacing="0"
                width="100%">
             <thead>
             <tr>
                 <th>id</th>
+                <th>头像</th>
                 <th>账号</th>
                 <th>昵称</th>
                 <th>性别</th>
-                <th>来源</th>
+                <th>关注作者</th>
+                <th>关注话题</th>
+                {{--<th>来源</th>--}}
                 <th>注册时间</th>
                 <th></th>
             </tr>
@@ -30,10 +33,15 @@
             @foreach($users as $u)
                 <tr>
                     <td>{{$u->id}}</td>
+                    <td>
+                        <img style="width: 50px;height: 50px" src="{{$k->users->avatar or url('img/avatar/default/avatar.png')}}">
+                    </td>
                     <td>{{$u->account}}</td>
                     <td>{{$u->nickname}}</td>
                     <td>@if($u->sex)男@else女@endif</td>
-                    <td>{{$u->register_from}}</td>
+                    <td>{{$u->author->count()}}</td>
+                    <td>{{$u->topic->count()}}</td>
+                    {{--<td>{{$u->register_from}}</td>--}}
                     <td>{{$u->created_at}}</td>
                     <td>
                         <div class="ui inline dropdown upward" tabindex="0">

@@ -3,14 +3,8 @@
 @section('content')
     <div class="ui segment">
         <h5 class="ui header">
-            用户管理
+            作者管理
         </h5>
-    </div>
-    <div class="ui segment">
-        <div class="ui fluid action input">
-            <input type="text" placeholder="Search...">
-            <div class="ui button">搜索</div>
-        </div>
     </div>
     <div class="ui segment">
         <table id="data_table" class="ui compact selectable striped celled table tablet stackable" cellspacing="0"
@@ -18,11 +12,13 @@
             <thead>
             <tr>
                 <th>id</th>
-                <th>账号</th>
-                <th>昵称</th>
-                <th>推荐作者</th>
+                <th>头像</th>
+                <th>作者账号</th>
+                <th>作者名称</th>
+                <th>作者头衔</th>
+                <th>粉丝数</th>
                 <th>性别</th>
-                <th>来源</th>
+                {{--<th>来源</th>--}}
                 <th>注册时间</th>
                 <th></th>
             </tr>
@@ -31,11 +27,16 @@
             @foreach($users as $u)
                 <tr>
                     <td>{{$u->id}}</td>
+                    <td>
+                        <img style="width: 50px;height: 50px"
+                             src="{{$k->users->avatar or url('img/avatar/default/avatar.png')}}">
+                    </td>
                     <td>{{$u->account}}</td>
                     <td>{{$u->nickname}}</td>
                     <td>{{$u->special->name}}</td>
+                    <td>{{$u->fans->count()}}</td>
                     <td>@if($u->sex)男@else女@endif</td>
-                    <td>{{$u->register_from}}</td>
+                    {{--<td>{{$u->register_from}}</td>--}}
                     <td>{{$u->created_at}}</td>
                     <td>
                         <div class="ui inline dropdown upward" tabindex="0">
