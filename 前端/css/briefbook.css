@@ -126,6 +126,9 @@ font-size: 0;
 .shareTogle {
 	display: none;
 }
+.shareTogle-1 {
+    display: none;
+}
 .shareTogle .weibo{
  color: #ff0000;
 }

@@ -3,7 +3,7 @@
     font-size: 14px;
     background-color: #fff;
     max-width: 1200px;
-    margin: 65px auto 0;
+    margin: auto ;
 }
 
 .inline{
@@ -89,7 +89,7 @@ h1,h2{
     pointer-events: none;
 }
 .RichText {
-    word-break: break-word;
+    /*word-break: break-word;*/
     white-space: pre-wrap;
 }
 .QuestionRichText .showContent{
@@ -207,7 +207,7 @@ h1,h2{
 /* 我的主页 start */
 .personalContent{
     background: #ffffff;
-    padding-top: 0
+    /*padding-top: 0*/
 }
 .personalContent .followAuthor-item{
     margin: 0;
@@ -241,6 +241,9 @@ h1,h2{
     border: solid 1px #3285f7;
     line-height: 30px;
     padding: 0 15px;
+}
+.editButton a{
+    color: rgba(51, 139, 255, 0.79);
 }
 .Profile-mainColumn{
     width: 70%;
@@ -383,9 +386,9 @@ h1,h2{
     color: #8590a6;
     font-weight: 400;
 }
-.Popover .outline{
-    transform:rgba(45deg);
-}
+/*.Popover .outline{*/
+    /*transform:rgba(45deg);*/
+/*}*/
 .iconUpDown {
     width: 18px;
     margin-left: -2px;
@@ -524,7 +527,7 @@ h1,h2{
 /*我的文章*/
 .ProfileArticle-header{
     /*border-bottom: solid 1px #dedede;*/
-    padding: 0 20px;
+    padding:0 20px ;
 }
 .ProfileArticle-nav{
     display: inline-block;
@@ -707,8 +710,9 @@ h1,h2{
 }
 
 .ProfileArticle-item{
-    padding: 20px;
+    padding: 20px 60px  20px 20px;
     color: #888888;
+    border-bottom: solid 1px #f1f1f1;
 }
 .ProfileArticle-word{
     width: 74%;
@@ -718,17 +722,21 @@ h1,h2{
 }
 
 .ProfileArticle-img{
-    width: 23%;
+float: right;
+    width:18%;
     height: 100px;
 }
 .ProfileArticle-word p{
-    margin-bottom: 5px;
+    margin-left:-6px;
+    color: #666666;
 }
 .ProfileArticle-word h3{
-    margin-bottom: 5px;
+    margin-bottom:10px;
+    font-weight: 600;
     color: #1a1a1a;
-    font-size: 16px;
+    font-size: 18px;
 }
+
 .ArticlewordItem>span{
     margin:0 6px;
 }
@@ -736,7 +744,7 @@ h1,h2{
     font-size: 10px;
 }
 .ArticlewordItem .edit{
-    color: #B8B8B8;
+    color:#666666;
 }
 .ArticlewordItem .more{
     font-size: 12px;
@@ -981,6 +989,123 @@ h1,h2{
 /* 编辑资料 end */
 
 
+/* ----------------------------------  新加  -----------------------------------------------------*/
+
+.ProfileMain-box .ProfileContent{display: none;}
+.ProfileMain-box .ProfileContent:nth-child(1){ display: block;}
+.ProfileContent{width: 100%;}
+
+.ContentItem-status .item{
+    margin-left: 23px;
+}
+.ContentItem-status .item a{
+    color: #228fbd
+}
+/* 我的回答页面*/
+.AnswerPage p{
+    margin-bottom: 0;
+
+}
+.AnswerPage .title{
+    margin: 10px 0;
+    color: #999;
+}
+.AnswerPage .words{
+    margin: 10px 0;
+    font-size: 15px;
+}
+.AnswerPage .numberBox>span{
+    margin-right: 22px;
+    color: #999;
+}
+.AnswerPage .right span{
+    margin-left: 10px;
+}
+
+/* 写文章 */
+.writePage{
+    margin: 20px auto 0;
+
+}
+.writePage .heading{
+    margin-bottom: 20px;
+}
+.writePage .heading input{
+    font-size: 24px;
+    width: 90%;
+    border:none;
+}
+.writePage .heading>span{
+    color: #999;
+}
+.writePage .wordItem {
+    margin-top: 20px;
+    line-height: 20px;
+
+}
+.writePage .wordItem .name{
+    width: 100px;
+}
+.writePage .topicBox{
+    border:solid 1px #dedede;
+    padding: 4px 12px;
+    color: #666;
+    min-width: 500px;
+}
+.writePage .wordItem input{
+    border: none;
+    margin-left: 2px;
+    margin-top: 4px;
+}
+.writePage .wordItem .search{
+    float: right;
+
+}
+.writePage .topicBoxList{
+    font-size: 10px;
+}
+.topicBoxList .topicBoxItem{
+    color: #3285f7;
+    background-color: #eaf3fe;
+    padding: 0 8px;
+    border-radius: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.topicBoxItem i{
+    margin-left: 2px;
+}
+
+
+.wordItem .upImg{
+    width: 100px;
+    height: 100px;
+    margin-right: 12px;
+    position: relative;
+    font-size: 20px;
+    background-color: #eee;
+    text-align: center;
+    line-height: 100px;
+    color: #666;
+}
+
+
+.writePage .botBox{
+    margin-left: 100px;
+    margin-top: 12px;
+}
+.imgTips{
+    color: #999;
+    margin-bottom: 12px;
+}
+.writePage button {
+    margin-right: 20px !important;
+    width: 120px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 
 
 

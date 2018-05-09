@@ -7,10 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/semantic.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/category.css">
+
+    <link rel="stylesheet" media="all" href="css/zhongchou.css" />
 
 </head>
 <body>
@@ -44,14 +46,15 @@
 
 	<div class="contentBox followContent">
 		<div class="followNav">
-			<span class="followNav-item">
-				<i class="user icon"></i>
-				推荐作者
-			</span>
-			<span class="followNav-item active">
-				<i class="block layout icon"></i>
-				推荐话题
-			</span>
+            <ul class="trigger-menu" data-pjax-container="#list-container">
+                <li  class="active" >
+                    <a data-order-by="recommend" href="" target="_blank">
+                        <i class="user icon"></i> 推荐作者</a>
+                </li>
+                <li  ><a data-order-by="hot" href="#"  target="_blank">
+                    <i class="block layout icon"></i> 推荐话题 </a>
+                </li>
+            </ul>
 		</div>
 
 		<!-- 推荐话题 -->

@@ -15,7 +15,8 @@ a h3,h5{color: #4b4b4b;}
 *{
     box-sizing:inherit;
 }
-
+.operation i:hover{color: #ff8020
+}
 ul li{
     list-style: none;
 }

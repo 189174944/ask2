@@ -70,7 +70,7 @@ width: 100%;height: auto;background: #ffffff;
 	height:30px !important;
 	margin-right:4px;
 }
-.people-name{
+.people-name a{
 	color: #333333;
 	font-size:12px;
 	font-weight:600;
