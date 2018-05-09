@@ -145,7 +145,7 @@ h1,h2{
 }
 .Avatar {
     background: #fff;
-    border-radius: 2px;
+    border-radius:5px;
 }
 .AuthorInfo-name {
     font-weight: 600;
@@ -188,7 +188,9 @@ h1,h2{
 .followAuthor p{margin-bottom: 5px;}
 .thin{color: #7a7a7a;}
 .authorImg{width: 64px !important;height: 64px !important;margin: 0 20px 0 30px;}
+.author-name{font-size: 20px;}
 .followAuthor-word{width:65%;margin-top:20px}
+.followAuthor-word h3{font-weight: 600;}
 .followAuthor-word .name{margin-bottom: 14px;font-size: 16px;}
 .followAuthor-word .name strong{font-size:22px;color: #000;margin-right: 8px;}
 .followAuthor-word .wordItem >span,.followAuthor-word .wordItem >.icon{margin-right: 8px;}
@@ -197,7 +199,7 @@ h1,h2{
 .followTopic{font-size: 12px;line-height: 1.5;padding-bottom: 20px;}
 .followTopic h4{margin-bottom: 8px;}
 .followTopic p{margin-bottom: 5px;}
-.followTopic .wordItem{color: #858585;}
+/*.followTopic .wordItem{color: #858585;}*/
 .collect {font-size: 14px;color: #787878;}
 .collect .circle{margin: 0 2px;}
 
@@ -1117,7 +1119,13 @@ float: right;
 }
 .ContentItem-content{font-size: 14px;letter-spacing: 0.8px;color: #222;line-height: 25px}
 .content-zan{height:30px;line-height: 20px;color:#666666;}
-
-
+.discuss{width: 96%;margin-left: 3%;}
+.discuss-title{margin-top:20px}
+.discussimg{float: left;margin-right: 2%;}
+.discuss-img{width: 40px !important;height: 40px !important;margin-right: 4px;}
+.discuss-right{float: right;margin-right: 5%;}
+.alias{color: #888;}
+.dan{color: #888;}
+.discuss-content{clear: both;padding:0 1% ;}
 
 
