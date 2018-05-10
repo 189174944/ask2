@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
-    <meta charset="UTF-8">
-    <title>我的主页</title>
+    <meta charset="utf-8">
+    <title>添加文章</title>
+    <link rel="stylesheet" media="all" href="css/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="css/semantic.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/semantic.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/category.css">
     <link rel="stylesheet" media="all" href="css/zhongchou.css" />
-    <link rel="stylesheet" type="text/css" href="css/briefbook.css">
-    <link rel="stylesheet" type="text/css" href="css/article.css">
-    <link rel="stylesheet" href="css/share.css" type="text/css" />
-
+    <link rel="stylesheet" media="all" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" media="all" href="css/custom.css" />
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
 </head>
-<body>
+<body class="wshui">
 <div class="gudin">
     <div class="pageIndex">
         <div class="page-right">
@@ -43,798 +39,158 @@
         </div>
     </div>
 </div>
-<!--头部结束-->
 
-<div class="contentBox clear personalContent">
-    <div class="followAuthor">
-        <div class="followAuthor-item">
-            <img class="authorImg ui medium circular middle aligned tiny image" src="images/love_4.png">
-            <div class="inline followAuthor-word">
-                <div class="name"><strong>亦范</strong>微信公众号:迅狗跨境电商天天说。提问请在值乎</div>
-                <p class="wordItem"><i class="shopping bag icon thin"></i><span>贸易零售</span><span>FDSOJDOSKO CJELS.VAD  CEO</span></p>
-                <!-- woman -->
-                <p class="wordItem"><i class="student icon thin"></i><span>www.yib2.com</span><span>关于我的故事</span><i class="man icon"></i></p>
-                <p class="wordItem togle"><i class="angle down icon"></i><span><a href="#">查看详细资料</a></span></p>
 
-            </div>
-            <div class="inline editButton">
-                <a href="./editInfo.html">编辑个人资料</a>
-            </div>
-        </div>
-    </div>
-    <div class="Profile-main">
-        <div class="Profile-mainColumn">
-            <div class="ProfileMain">
-                <div class="ProfileMain-header">
-                    <ul class="Tabs ProfileMain-tabs">
-                        <li class="Tabs-item "><a href="javascript:;" class="Tabs-link is-active">动态</a><span class="Tabs-meta">220</span></li>
-                        <li class="Tabs-item"><a href="javascript:;" class="Tabs-link">回答</a><span class="Tabs-meta">20</span></li>
-                        <li class="Tabs-item"><a href="javascript:;" class="Tabs-link">提问</a><span class="Tabs-meta">20</span></li>
-                        <li class="Tabs-item"><a href="javascript:;" class="Tabs-link">文章</a><span class="Tabs-meta">20</span></li>
-                        <!-- 	<li class="Tabs-item Tabs-item--noMeta">
-                                <a href="#" class="ProfileMain-menuToggler">更多<i class="angle down icon"></i></a>
-                            </li> -->
-                    </ul>
-                </div>
-                <div class="ProfileMain-box">
-                    <!-- 我的动态 -->
-                    <div class="List ProfileActivities ProfileContent">
-                        <div class="List-header">
-                            <h4 class="List-headerText"><span>我的动态</span></h4>
-                        </div>
-                        <div>
-                            <div class="List-item">
-                                <div class="List-itemMeta">
-                                    <div class="ActivityItem-meta">
-                                        <span class="ActivityItem-metaTitle">发表了文章</span>
-                                        <span>20小时前</span>
-                                    </div>
+<!--用户中心-->
+
+<div class="user-home bg-white" >
+    <div class="container index">
+        <form class="form-horizontal mar-t-1" action="http://192.168.10.103/ask2/index.php?user/addxinzhi.html"  method="post" enctype="multipart/form-data">
+            <div class="row main">
+
+                <div class="col-md-8">
+
+                    <div class="fenmian" >
+
+                        <p>封面图:</p>
+                        <div class="form-group">
+
+                            <div class="col-md-24">
+                                <div id="preview" style="overflow:visible">
+                                    <img class="img-thumbnail" style="width:288px;height:192px;" data-caption="" id="imghead" style="max-height: 300px;" border=0 src='./images/agree.png'>
                                 </div>
-                                <h4 class="List-item-title"><a href="#">为什么大多数人不支持你用tor，也不支持你去访问暗网？</a></h4>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large" src="images/4.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="ContentItem-head">
-                                            <h2 class="ContentItem-title">
-                                                <a href="#" class="TopicLink">
-                                                    <div class="Popover"> 浅黑科技 </div>
-                                                </a>
-                                            </h2>
-                                            <p>「浅黑科技」创始人，记者。日常操作是和各路技术大神聊天。</p>
-                                        </div>
+                                <div class="add-img-box row">
+                                    <div class="col-sm-24">
+    <span class="add-img" >
+  <a id="layerUploadButton"></a></span>
+                                        <div class="add-img-html5" style=""><span>
+  </span><a class="text-danger" href="#"  data-toggle="tooltip" data-placement="bottom" title="点击这选择封面图片，大小建议288px*192px,或者填封面图外部链接" style="font-size:12px;cursor:pointer;margin-top:3px;"><i class="fa fa-image" ></i>点我上传封面图
+                                        </a>
+                                            <input type="file" id="layer_upload" onchange="previewImage(this)" name="image" title="点击这选择封面图片，大小建议288px*192px,或者填封面图外部链接" style="opacity: 0;height: 40px;position:relative;top:-2rem;">
 
-                                    </div>
-                                    <p class="content-zan">120人赞同了该回答</p>
-                                </div>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large-content" src="images/3.jpg">
-                                            </div>
                                         </div>
-                                        <div class="ContentItem-head">
-
-                                            <p class="ContentItem-content">
-                                                大家好~我是 @史中，我的日常生活是开撩五湖四海的科技大牛，我会尝试各种姿势，把他们的无边脑洞和温情故事讲给你听。我的日常生活是开撩五湖四海的科技。把他们的无边脑洞和温情故事讲给你听。如果你特别想听到谁的故事，不妨加微信（微信号：shizhongst）告诉我，反正我也不…<a href="javascript:;" >阅读全文 <i class="expand icon"></i></a> </p>
-                                        </div>
-                                    </div>
-                                    <div class="operation">
-                                        <span><i class="thumbs up icon img26"></i><span class="likes" class="p">&nbsp;</span></span>
-                                        <span><i class="thumbs down icon"></i><span class="cai" class="p">&nbsp;</span></span>
-                                        <span><i class="talk outline icon"></i>48评论</span>
-                            <span class="shareHover">
-                                    <span><i class="share icon"></i>分享</span>
-                                    <span class="shareTogle">
-                                        <div class="tank ">
-                                            <ul>
-                                                <li>
-                                                    <span class="item itemRow one" onclick="one()"><i class="qq icon"></i>空间</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow sina"><i class="weibo icon"></i>微博</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow weixin"><i class="wechat icon"></i>微信</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </span>
-                            </span>
                                     </div>
 
                                 </div>
-                            </div>
-                            <div class="List-item">
-                                <div class="List-itemMeta">
-                                    <div class="ActivityItem-meta">
-                                        <span class="ActivityItem-metaTitle">发表了文章</span>
-                                        <span>20小时前</span>
-                                    </div>
-                                </div>
-                                <h4 class="List-item-title"><a href="#">究竟什么是暗网，暗网又是如何进入的？</a></h4>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large" src="images/6.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="ContentItem-head">
-                                            <h2 class="ContentItem-title">
-                                                <a href="#" class="TopicLink">
-                                                    <div class="Popover"> 浅黑科技 </div>
-                                                </a>
-                                            </h2>
-                                            <p>「浅黑科技」创始人，记者。日常操作是和各路技术大神聊天。</p>
-                                        </div>
 
-                                    </div>
-                                    <p class="content-zan">21 人赞同了改回答</p>
-                                </div>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large-content" src="images/7.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="ContentItem-head">
 
-                                            <p class="ContentItem-content">
-                                                大家好~我是 @史中，这是一名黑客在网上的独白，他在出租自己的黑客技术。黑进个人电子邮箱收费200欧元，而让一个人名誉扫地只要500欧元。这个帖子得以赤裸裸地招摇过市，是因为它处在不见天日的暗网之中。暗网的世界游离于标准互联网和搜索引擎之外，像你我这样的普通人可能永远不会看到它。在暗网世界里… <a href="javascript:;" >阅读全文 <i class="expand icon"></i></a></p>
-                                        </div>
-                                    </div>
-                                    <div class="operation">
-                                        <span><i class="thumbs up icon img26"></i><span class="likes" class="p">&nbsp;</span></span>
-                                        <span><i class="thumbs down icon"></i><span class="cai" class="p">&nbsp;</span></span>
-                                        <span><i class="talk outline icon"></i>48评论</span>
-                            <span class="shareHover">
-                                    <span><i class="share icon"></i>分享</span>
-                                    <span class="shareTogle">
-                                        <div class="tank ">
-                                            <ul>
-                                                <li>
-                                                    <span class="item itemRow one" onclick="one()"><i class="qq icon"></i>空间</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow sina"><i class="weibo icon"></i>微博</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow weixin"><i class="wechat icon"></i>微信</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </span>
-                            </span>
-                                    </div>
-
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- 我的回答 -->
-                    <div class="Profile-answers ProfileContent">
-                        <div class="List-header">
-                            <h4 class="List-headerText">
-                                <span>我的回答</span>
-                            </h4>
-                            <div class="List-headerOptions">
-                                <div class="Popover">
-                                    <span>按时间排序</span>
-              	 				<span class="inline iconUpDown clear">
-              	 					<i class="angle up icon"></i>
-              	 					<i class="angle down icon"></i>
-              	 				</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="List-item">
-                                <h4 class="List-item-title"><a href="#">为什么大多数人不支持你用tor，也不支持你去访问暗网？</a></h4>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large" src="images/4.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="ContentItem-head">
-                                            <h2 class="ContentItem-title">
-                                                <a href="#" class="TopicLink">
-                                                    <div class="Popover"> 浅黑科技 </div>
-                                                </a>
-                                            </h2>
-                                            <p>「浅黑科技」创始人，记者。日常操作是和各路技术大神聊天。</p>
-                                        </div>
+                        <!-- -待续 -->
 
-                                    </div>
-                                    <p class="content-zan">21 人赞同了改回答</p>
-                                </div>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large-content" src="images/5.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="ContentItem-head">
 
-                                            <p class="ContentItem-content">
-                                                大家好~我是 @史中，我的日常生活是开撩五湖四海的科技大牛，我会尝试各种姿势，把他们的无边脑洞和温情故事讲给你听。我的日常生活是开撩五湖四海的科技。把他们的无边脑洞和温情故事讲给你听。如果你特别想听到谁的故事，不妨加微信（微信号：shizhongst）告诉我，反正我也不…<a href="javascript:;" >阅读全文 <i class="expand icon"></i></a> </p>
-                                        </div>
-                                    </div>
-                                    <div class="operation">
-                                        <span><i class="thumbs up icon img26"></i><span class="likes" class="p">&nbsp;</span></span>
-                                        <span><i class="thumbs down icon"></i><span class="cai" class="p">&nbsp;</span></span>
-                                        <span><i class="talk outline icon"></i>48评论</span>
-                            <span class="shareHover">
-                                    <span><i class="share icon"></i>分享</span>
-                                    <span class="shareTogle">
-                                        <div class="tank ">
-                                            <ul>
-                                                <li>
-                                                    <span class="item itemRow one" onclick="one()"><i class="qq icon"></i>空间</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow sina"><i class="weibo icon"></i>微博</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow weixin"><i class="wechat icon"></i>微信</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </span>
-                            </span>
-                                    </div>
 
-                                </div>
-                            </div>
-                            <div class="List-item">
-                                <h4 class="List-item-title"><a href="#">究竟什么是暗网，暗网又是如何进入的？</a></h4>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large" src="images/2.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="ContentItem-head">
-                                            <h2 class="ContentItem-title">
-                                                <a href="#" class="TopicLink">
-                                                    <div class="Popover"> 浅黑科技 </div>
-                                                </a>
-                                            </h2>
-                                            <p>「浅黑科技」创始人，记者。日常操作是和各路技术大神聊天。</p>
-                                        </div>
 
-                                    </div>
-                                    <p class="content-zan">21 人赞同了改回答</p>
-                                </div>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large-content" src="images/3.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="ContentItem-head">
-
-                                            <p class="ContentItem-content">
-                                                大家好~我是 @史中，这是一名黑客在网上的独白，他在出租自己的黑客技术。黑进个人电子邮箱收费200欧元，而让一个人名誉扫地只要500欧元。这个帖子得以赤裸裸地招摇过市，是因为它处在不见天日的暗网之中。暗网的世界游离于标准互联网和搜索引擎之外，像你我这样的普通人可能永远不会看到它。在暗网世界里… <a href="javascript:;" >阅读全文 <i class="expand icon"></i></a></p>
-                                        </div>
-                                    </div>
-                                    <div class="operation">
-                                        <span><i class="thumbs up icon img26"></i><span class="likes" class="p">&nbsp;</span></span>
-                                        <span><i class="thumbs down icon"></i><span class="cai" class="p">&nbsp;</span></span>
-                                        <span><i class="talk outline icon"></i>48评论</span>
-                            <span class="shareHover">
-                                    <span><i class="share icon"></i>分享</span>
-                                    <span class="shareTogle">
-                                        <div class="tank ">
-                                            <ul>
-                                                <li>
-                                                    <span class="item itemRow one" onclick="one()"><i class="qq icon"></i>空间</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow sina"><i class="weibo icon"></i>微博</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow weixin"><i class="wechat icon"></i>微信</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </span>
-                            </span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  我的提问 -->
-                    <div class="List ProfileActivities ProfileContent" >
-                        <div class="List-header">
-                            <h4 class="List-headerText"><span>我的提问</span></h4>
-                        </div>
-                        <div>
-                            <div class="List-item">
-                                <div class="ContentItem">
-                                    <h2 class="ContentItem-title">
-                                        <div class="QuestionItem-title">
-                                            <a href="#"> 阿里云为什么要进军物联网？ </a>
-                                        </div>
-                                    </h2>
-                                    <div class="ContentItem-status">
-                                        <span class="ContentItem-statusItem">2017-03-30</span>
-                                        <span class="ContentItem-statusItem">2 个回答</span>
-                                        <span class="ContentItem-statusItem">12 个关注</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="List-item">
-                                <div class="ContentItem">
-                                    <h2 class="ContentItem-title">
-                                        <div class="QuestionItem-title">
-                                            <a href="#"> 【提示】微信清理“僵尸粉”最新骗局是怎么回事？ </a>
-                                        </div>
-                                    </h2>
-                                    <div class="ContentItem-status">
-                                        <span class="ContentItem-statusItem">2017-03-30</span>
-                                        <span class="ContentItem-statusItem">2 个回答</span>
-                                        <span class="ContentItem-statusItem">12 个关注</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="List-item">
-                                <div class="ContentItem">
-                                    <h2 class="ContentItem-title">
-                                        <div class="QuestionItem-title">
-                                            <a href="#"> 有哪些真实有趣的黑客故事？ </a>
-                                        </div>
-                                    </h2>
-                                    <div class="ContentItem-status">
-                                        <span class="ContentItem-statusItem">2017-03-30</span>
-                                        <span class="ContentItem-statusItem">2 个回答</span>
-                                        <span class="ContentItem-statusItem">12 个关注</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="List-item">
-                                <div class="ContentItem">
-                                    <h2 class="ContentItem-title">
-                                        <div class="QuestionItem-title">
-                                            <a href="#"> 如何评价黑客袁仁广？ </a>
-                                        </div>
-                                    </h2>
-                                    <div class="ContentItem-status">
-                                        <span class="ContentItem-statusItem">2017-03-30</span>
-                                        <span class="ContentItem-statusItem">2 个回答</span>
-                                        <span class="ContentItem-statusItem">12 个关注</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="List-item">
-                                <div class="ContentItem">
-                                    <h2 class="ContentItem-title">
-                                        <div class="QuestionItem-title">
-                                            <a href="#">如何评价“人要先感到幸福，才能看到玫瑰。 ​​​”这句话？</a>
-                                        </div>
-                                    </h2>
-                                    <div class="ContentItem-status">
-                                        <span class="ContentItem-statusItem">2017-03-30</span>
-                                        <span class="ContentItem-statusItem">2 个回答</span>
-                                        <span class="ContentItem-statusItem">12 个关注</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="List-item">
-                                <div class="ContentItem">
-                                    <h2 class="ContentItem-title">
-                                        <div class="QuestionItem-title">
-                                            <a href="#">微信公众平台里 自动回复能实现翻译功能？</a>
-                                        </div>
-                                    </h2>
-                                    <div class="ContentItem-status">
-                                        <span class="ContentItem-statusItem">2017-03-30</span>
-                                        <span class="ContentItem-statusItem">2 个回答</span>
-                                        <span class="ContentItem-statusItem">12 个关注</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  我的文章 -->
-                    <div class="ProfileArticle ProfileContent">
-                        <div class="List-header">
-                            <h4 class="List-headerText">
-                                <span>他的文章</span>
-                            </h4>
-                            <div class="List-headerOptions">
-                                <div class="Popover">
-                                    <span>按时间排序</span>
-              	 				<span class="inline iconUpDown clear">
-              	 					<i class="angle up icon"></i>
-              	 					<i class="angle down icon"></i>
-              	 				</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="List-item">
-                                <h4 class="List-item-title"><a href="#">为什么大多数人不支持你用tor，也不支持你去访问暗网？</a></h4>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large" src="images/4.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="ContentItem-head">
-                                            <h2 class="ContentItem-title">
-                                                <a href="#" class="TopicLink">
-                                                    <div class="Popover"> 浅黑科技 </div>
-                                                </a>
-                                            </h2>
-                                            <p>「浅黑科技」创始人，记者。日常操作是和各路技术大神聊天。</p>
-                                        </div>
-
-                                    </div>
-                                    <p class="content-zan">21 人赞同了改回答</p>
-                                </div>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large-content" src="images/5.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="ContentItem-head">
-
-                                            <p class="ContentItem-content">
-                                                大家好~我是 @史中，我的日常生活是开撩五湖四海的科技大牛，我会尝试各种姿势，把他们的无边脑洞和温情故事讲给你听。我的日常生活是开撩五湖四海的科技。把他们的无边脑洞和温情故事讲给你听。如果你特别想听到谁的故事，不妨加微信（微信号：shizhongst）告诉我，反正我也不…<a href="javascript:;" >阅读全文 <i class="expand icon"></i></a> </p>
-                                        </div>
-                                    </div>
-                                    <div class="operation">
-                                        <span><i class="thumbs up icon img26"></i><span class="likes" class="p">&nbsp;</span></span>
-                                        <span><i class="thumbs down icon"></i><span class="cai" class="p">&nbsp;</span></span>
-                                        <span><i class="talk outline icon"></i>48评论</span>
-                            <span class="shareHover">
-                                    <span><i class="share icon"></i>分享</span>
-                                    <span class="shareTogle">
-                                        <div class="tank ">
-                                            <ul>
-                                                <li>
-                                                    <span class="item itemRow one" onclick="one()"><i class="qq icon"></i>空间</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow sina"><i class="weibo icon"></i>微博</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow weixin"><i class="wechat icon"></i>微信</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </span>
-                            </span>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="List-item">
-                                <h4 class="List-item-title"><a href="#">究竟什么是暗网，暗网又是如何进入的？</a></h4>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large" src="images/2.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="ContentItem-head">
-                                            <h2 class="ContentItem-title">
-                                                <a href="#" class="TopicLink">
-                                                    <div class="Popover"> 浅黑科技 </div>
-                                                </a>
-                                            </h2>
-                                            <p>「浅黑科技」创始人，记者。日常操作是和各路技术大神聊天。</p>
-                                        </div>
-
-                                    </div>
-                                    <p class="content-zan">21 人赞同了改回答</p>
-                                </div>
-                                <div class="ContentItem">
-                                    <div class="ContentItem-main">
-                                        <div class="ContentItem-image">
-                                            <div class="Popover">
-                                                <img class="Avatar--large-content" src="images/3.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="ContentItem-head">
-
-                                            <p class="ContentItem-content">
-                                                大家好~我是 @史中，这是一名黑客在网上的独白，他在出租自己的黑客技术。黑进个人电子邮箱收费200欧元，而让一个人名誉扫地只要500欧元。这个帖子得以赤裸裸地招摇过市，是因为它处在不见天日的暗网之中。暗网的世界游离于标准互联网和搜索引擎之外，像你我这样的普通人可能永远不会看到它。在暗网世界里… <a href="javascript:;" >阅读全文 <i class="expand icon"></i></a></p>
-                                        </div>
-                                    </div>
-                                    <div class="operation">
-                                        <span><i class="thumbs up icon img26"></i><span class="likes" class="p">&nbsp;</span></span>
-                                        <span><i class="thumbs down icon"></i><span class="cai" class="p">&nbsp;</span></span>
-                                        <span><i class="talk outline icon"></i>48评论</span>
-                            <span class="shareHover">
-                                    <span><i class="share icon"></i>分享</span>
-                                    <span class="shareTogle">
-                                        <div class="tank ">
-                                            <ul>
-                                                <li>
-                                                    <span class="item itemRow one" onclick="one()"><i class="qq icon"></i>空间</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow sina"><i class="weibo icon"></i>微博</span>
-                                                </li>
-                                                <li>
-                                                    <span class="item itemRow weixin"><i class="wechat icon"></i>微信</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </span>
-                            </span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <!--  -->
 
             </div>
-
-        </div>
-        <div class="Profile-sideColumn">
-            <div class="Card">
-                <div class="Card-header Profile-sideColumnTitle">
-                    <div class="Card-headerText">个人成就</div>
-                </div>
-                <div class="Profile-sideColumnItems">
-                    <div class="Profile-sideColumnItem">
-                        <div class="IconGraf">
-                            <i class="thumbs outline up icon"></i>
-                            <a href="#" class="Profile-sideColumnItemLink">获得了7,327次赞同</a>
-                            <p class="kong"> <a href="#" class="Profile-sideColumnItemLink">获得了 790 次感谢 ， 2,721 次收藏</a></p>
-                        </div>
-                        <div class="IconGraf">
-                            <i class="empty heart icon"></i>
-                            <a href="#" class="Profile-sideColumnItemLink">回答获得了1279万人阅读</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="Card FollowshipCard">
-                <div class="NumberBoard FollowshipCard-counts NumberBoard--divider">
-                    <a href="#" class="Button NumberBoard-item Button--plain">
-                        <div class="NumberBoard-itemInner">
-                            <div class="NumberBoard-itemName">关注了</div>
-                            <strong class="NumberBoard-itemValue">86</strong>
-                        </div>
-                    </a>
-                    <a href="#" class="Button NumberBoard-item Button--plain">
-                        <div class="NumberBoard-itemInner">
-                            <div class="NumberBoard-itemName">关注了</div>
-                            <strong class="NumberBoard-itemValue">56</strong>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="Profile-lightList">
-                <a href="#" class="Profile-lightItem">
-                    <span class="Profile-lightItemName">手机为何充不进电？</span>
-                    <span class="Profile-lightItemValue">24</span>
-                </a>
-                <a href="#" class="Profile-lightItem">
-                    <span class="Profile-lightItemName">市场营销的策略方法？</span>
-                    <span class="Profile-lightItemValue">53</span>
-                </a>
-                <a href="#" class="Profile-lightItem">
-                    <span class="Profile-lightItemName">如何把梳子卖给和尚？</span>
-                    <span class="Profile-lightItemValue">68</span>
-                </a>
-            </div>
-
-        </div>
+        </form>
 
     </div>
 
 
 </div>
-<!--赞-->
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript">
-    $(function () {
-        for (var i = 0; i < $('.likes').length; i++) {
-            var ran = 120;
-//			var ran = Math.floor(Math.random() * 22 + 1)
-            $('.likes').eq(i).text(ran)
-        }
-        $(".img26").click(function () {
-            var num = $(this).next().text()
-            num++;
-            $(this).next().text(num);
-        });
-    });
-</script>
 
-<!--踩-->
-<script type="text/javascript">
-    $(function () {
-        for (var i = 0; i < $('.cai').length; i++) {
-            var ran = 13;
-//			var ran = Math.floor(Math.random() * 22 + 1)
-            $('.cai').eq(i).text(ran)
-        }
-        $(".down").click(function () {
-            var num = $(this).next().text()
-            num++;
-            $(this).next().text(num);
-        });
-    });
-</script>
+
+
+
+
+
 
 <script type="text/javascript">
-    //需要添加展开收起的添加四个类 ，父元素 .wordTogle  文字 .text  全文.sumTxt  收起.Takeup
-    var content_arr=[];
-    $(function(){
-        $(".wordTogle").each(function(){
-            var content=$.trim($(this).children(".text").text());
-            content_arr.push(content);
-
+    $("#myLgModal .modal-dialog").css("width","460px");
+    function showcategory(){
+        $('#myLgModal').modal({
+            position    :50,
+            moveable : true,
+            show     : true
         })
-        var len=content_arr.length
-        for(var i=0;i<len;i++){
-            $(".wordTogle").eq(i).children(".text").attr("data-index",i)
-            var txt=content_arr[i]
-            if(txt.length>100){
-                //100最多显示的字数
-                txt=txt.substr(0,100)+"..."
-                $(".wordTogle").eq(i).children(".sumTxt").show()
-            }
-            $(".wordTogle").eq(i).children(".text").text(txt)
-        }
-
-
-        $(".sumTxt").on("click",function(e){
-            var index=$(this).siblings(".text").attr("data-index");
-            $(".wordTogle").eq(index).children(".text").text(content_arr[index])
-            $(this).hide();
-            $(this).siblings(".Takeup").show()
-        })
-
-        $(".Takeup").on("click",function(e){
-            var index=$(this).siblings(".text").attr("data-index");
-            var txt=$(".wordTogle").eq(index).children(".text").text()
-            txt=txt.substr(0,100)+"..."
-            $(".wordTogle").eq(index).children(".text").text(txt)
-            $(this).hide();
-            $(this).siblings(".sumTxt").show()
-        })
-
-    })
-    $(document).ready(function(){
-        $(".shareHover").click(function(){
-            $(".bdsharebuttonbox").toggle()
-        })
-    })
-
-</script>
-
-<!--//分享到QQ空间-->
-<script type="text/javascript">
-
-    //分享到QQ空间
-    function one(){
-        var share1=new ShareTip();
-        share1.sharetoqqzone(
-                "问答首页",
-                "http://192.168.10.104/ui27/index.html",
-                "http://192.168.10.104/ui27/images/content-img-1.png"
-        );
     }
+    $("#article_btn").click(function(){
+        var v=$("#topicclass").val();
+        var fv=$("#layer_upload").val();
+        var upfv=$("#outimgurl").val();
+        if(v==''){
+            alert("请选择文章分类");
+            showcategory();
+            return false;
+        }
+        if(fv==''&&upfv==''){
 
-    var ShareTip = function()  {};
-    //分享到QQ空间
-    ShareTip.prototype.sharetoqqzone=function(title,url,picurl)
+
+            alert("请选择文章封面图");
+            return false;
+        }
+    })
+
+    function checkarticle(){
+        if($("#topicclass")==''){
+            alert("请选择文章分类");
+            return false;
+        }
+    }
+    //图片上传预览    IE是用了滤镜。
+    function previewImage(file)
     {
-        var shareqqzonestring='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary='+title+'&url='+url+'&pics='+picurl;
-        window.open(shareqqzonestring,'newwindow','height=400,width=400,top=100,left=100');
+        var MAXWIDTH  = 300;
+        var MAXHEIGHT = 240;
+        var div = document.getElementById('preview');
+        if (file.files && file.files[0])
+        {
+            div.innerHTML =' <a target="_blank" id="imgshowlink" href="" data-toggle="lightbox" data-group="image-group-1"><img class="img-thumbnail" id=imghead></a>';
+            var img = document.getElementById('imghead');
+            img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+            }
+            var reader = new FileReader();
+            reader.onload = function(evt){
+                img.src = evt.target.result;
+                $("#imghead").attr("data-img",evt.target.result);
+                $("#imgshowlink").attr("href",evt.target.result);
+
+            }
+            reader.readAsDataURL(file.files[0]);
+        }
+        else //兼容IE
+        {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img class="img-thumbnail" data-caption="" data-toggle="lightbox" id=imghead>';
+            var img = document.getElementById('imghead');
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+        }
+    }
+    function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+        var param = {top:0, left:0, width:width, height:height};
+        if( width>maxWidth || height>maxHeight )
+        {
+            rateWidth = width / maxWidth;
+            rateHeight = height / maxHeight;
+
+            if( rateWidth > rateHeight )
+            {
+                param.width =  maxWidth;
+                param.height = Math.round(height / rateWidth);
+            }else
+            {
+                param.width = Math.round(width / rateHeight);
+                param.height = maxHeight;
+            }
+        }
+
+        param.left = Math.round((maxWidth - param.width) / 2);
+        param.top = Math.round((maxHeight - param.height) / 2);
+        return param;
     }
 </script>
 
-<!--jq的分享-->
-<script src="js/share.js" type="text/javascript"></script>
-<script>
 
-
-    $(function() {
-        $("#socialShare").socialShare({
-            content: $("p").text().trim(),
-            url: "http://blog.csdn.net/libin_1/article/details/51935944",
-            titile: $("h1").text().trim()
-        });
-        $(".msb_main").trigger('click');
-    });
-
-    $("#shareQQ").on("click", function() {
-        $(this).socialShare("tQQ");
-    })
-
-    $("#main").click(function() {
-        var openUrl = "https://www.baidu.com"; //弹出窗口的url
-        var iWidth = 630; //弹出窗口的宽度;
-        var iHeight = 580; //弹出窗口的高度;
-        var iTop = (window.screen.availHeight - 30 - iHeight) / 2; //获得窗口的垂直位置;
-        var iLeft = (window.screen.availWidth - 10 - iWidth) / 2; //获得窗口的水平位置;
-        window.open(openUrl, "", "height=" + iHeight + ", width=" + iWidth + ", top=" + iTop + ", left=" + iLeft + "" + ",toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
-        //window.open('page.html', 'newwindow', 'height=580, width=650, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no');
-    });
-    $(function() {
-        function autocenter() {
-            var bodyW = parseInt(document.documentElement.clientWidth);
-            var bodyH = parseInt(document.documentElement.clientHeight);
-            var elW = $("#weixin").width();
-            var elH = $("#weixin").height();
-            console.log((bodyW - elW) / 2);
-            $("#weixin").css("left", (bodyW - elW) / 2);
-            $("#weixin").css("top", (bodyH - elH) / 2);
-        }
-        window.onresize = function() {
-            autocenter();
-        };
-    });
-
-
-
-</script>
-
-
-
-
-
-
-<script>
-    $(function(){
-        $(".ProfileMain-tabs li").each(function(){
-            var that=this;
-            $(this).on("click",function(event){
-                var index=$(that).index();
-                var active=$(that).find("a").hasClass('is-active');
-                if(!active){
-                    $(that).find("a").addClass('is-active');
-                    $(that).siblings().find("a").removeClass('is-active')
-                }
-                $(".ProfileMain-box").children('.ProfileContent').eq(index).show().siblings().hide();
-
-            })
-        })
-        //  我的文章tab
-        $(".ProfileArticle-nav li").each(function(){
-            var that=this;
-            $(this).on("click",function(event){
-                var index=$(that).index();
-                var active=$(this).hasClass('active');
-                if(!active) $(this).addClass('active').siblings().removeClass('active');
-                $(".ProfileArticleMain").children('.ProfileArticle-content').eq(index).show().siblings().hide();
-
-            })
-        })
-    })
-</script>
-
-
-
-
-</body>
-</html>
