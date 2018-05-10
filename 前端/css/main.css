@@ -1,5 +1,5 @@
 .contentBox{
-    padding: 16px;
+    padding:0 16px 16px;
     font-size: 14px;
     background-color: #fff;
     max-width: 1200px;
@@ -1155,7 +1155,7 @@ float: right;
 .suitAnswer .addLabel i{color: #999;font-size: 18px;}
 .suitAnswer .addLabel input{border: none;}
 .suitAnswer .problem{margin: 30px 0 35px; color: #333;cursor: pointer;}
-.suitAnswer .problem h4{margin-bottom:12px;font-size:20px;font-weight: 600;}
+.suitAnswer .problem h4{margin-bottom:12px;font-weight: 600;}
 .suitAnswer .problem .item{margin-right:16px;color: #999;}
 .suitAnswer .problem:hover h4{ color: #3285f7}
 .suitAnswer .problem .item:hover{color: #3285f7}
