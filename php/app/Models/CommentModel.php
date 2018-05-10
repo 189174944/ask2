@@ -13,7 +13,9 @@ class CommentModel extends Model
         'users_id',
         'content',
         'created_at',
-        'updated_at'
+        'updated_at',
+        'status',
+        'satisfactory_answer'
     ];
     public function users(){
         return $this->belongsTo(UsersModel::class,'users_id','id');

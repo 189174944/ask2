@@ -79,4 +79,11 @@ class UsersController extends Controller
         }])->get();
         return response()->json($result);
     }
+    //关注/取消关注话题
+    //收藏/取消收藏问题/文章
+//    发布文章
+//    更新文章
+
+//获取问题收藏夹
+//获取文章收藏夹
 }

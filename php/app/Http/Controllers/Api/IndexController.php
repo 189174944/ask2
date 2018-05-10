@@ -15,7 +15,7 @@ class IndexController extends Controller
 //        select(['title', 'content', 'users_id','created_at'])->
         $artical = ArticalModel::with(['topic', 'users.special', 'users' => function ($query) {
             $query->select(['id', 'nickname', 'avatar', 'is_special']);
-        }])->paginate();
+        }])->paginate(12);
 
 
         return response()->json([

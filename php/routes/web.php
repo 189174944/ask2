@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', function () {
-    dd(\App\Models\UsersModel::where('id',1)->with('author')->get()->toArray());
+//    dd(\App\Models\UsersModel::where('id',1)->with('author')->get()->toArray());
 });
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['web']], function () {
@@ -15,5 +15,4 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['web
     Route::post('/deleteArrowId', 'TopicController@deleteArrowId');//删除父话题接口
     Route::post('/insertArrowId', 'TopicController@insertArrowId');//插入父话题接口
     Route::post('/topic_image_upload', 'TopicController@topicImageUpload');//插入父话题接口
-
 });
