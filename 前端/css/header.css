@@ -3,10 +3,11 @@ body {font-size:62.5%;
     background: #ffffff;
 }
 
-a h3,h5{color: #4b4b4b;}
+a h3,h5{color: #000;}
 
 .all{ max-width: 1200px;margin: auto;min-height: 600px;background: red;}
 .pageIndex{
+
     max-width: 1200px;
     margin:0 auto 0;
     font-size: 14px;

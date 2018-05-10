@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>添加关注</title>
-	<link rel="stylesheet" type="text/css" href="css/semantic.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/semantic.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/category.css">
-
+    <meta charset="UTF-8">
+    <title>我的主页</title>
     <link rel="stylesheet" media="all" href="css/zhongchou.css" />
-
+    <link rel="stylesheet" type="text/css" href="css/semantic.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/briefbook.css">
+    <link rel="stylesheet" type="text/css" href="css/category.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/article.css">
+    <script type="text/javascript" src="js/semantic.js"></script>
+    <link rel="stylesheet" media="all" href="css/topic.css" />
+    <link rel="stylesheet" media="all" href="css/zhongchou.css" />
+    <link rel="stylesheet" media="all" href="css/common.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/semantic.js"></script>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/share.css" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 <div class="gudin">
@@ -42,10 +49,11 @@
         </div>
     </div>
 </div>
-	<!--头部结束-->
+<!--头部结束-->
 
-	<div class="contentBox followContent">
-		<div class="followNav">
+<div class="contentBox clear personalContent ">
+    <div class="clear">
+        <div class="followNav">
             <ul class="trigger-menu" data-pjax-container="#list-container">
                 <li  class="active" >
                     <a data-order-by="recommend" href="" target="_blank">
@@ -55,25 +63,37 @@
                     <i class="block layout icon"></i> 推荐话题 </a>
                 </li>
             </ul>
-		</div>
+        </div>
 
-		<!-- 推荐话题 -->
-		<div class="followTopic">
-			<div class="followAuthor-item">
-				<img class="inline authorImg" src="images/jianshu.png">
-				<div class="inline followAuthor-word">
-					<h3>简书</h3>
-					<p class="wordItem">简书，是一个创作社区，任何人均可以在其上进行创作。用户在简书上面可以方便的创作自己的作品，用户在简书上面可以方便的创作自己的作品,互相交流在其上进行创用...<a href="#">阅读全文<i class="angle down icon" data-filtered="filtered"></i></a></p>
-					<div class="collect">
-						收录了6071篇文章<i class="circle">•</i>1190个回答
-					</div>
-				</div>
-				<div class="inline fllowButtonBox">
-					<button class="ui button follow"><i class="fa fa-plus">+</i><span>关注</span></button>
-				</div>
-			</div>
-
-		</div>
+        <!-- 推荐话题 -->
+        <div class="followTopic">
+            <div class="followAuthor-item">
+                <img class="inline authorImg" src="images/jianshu.png">
+                <div class="inline followAuthor-word">
+                    <p class="author-name">简书</p>
+                    <p class="wordItem">简书，是一个创作社区，任何人均可以在其上进行创作。用户在简书上面可以方便的创作自己的作品，用户在简书上面可以方便的创作自己的作品,互相交流在其上进行创用...<a href="#">阅读全文<i class="angle down icon" data-filtered="filtered"></i></a></p>
+                    <div class="collect">
+                        收录了6071篇文章<i class="circle">•</i>1190个回答
+                    </div>
+                </div>
+                <div class="inline fllowButtonBox">
+                    <button class="ui button follow"><i class="fa fa-plus">+</i><span>关注</span></button>
+                </div>
+            </div>
+            <div class="followAuthor-item">
+                <img class="inline authorImg" src="images/jianshu.png">
+                <div class="inline followAuthor-word">
+                    <p class="author-name">简书</p>
+                    <p class="wordItem">简书，是一个创作社区，任何人均可以在其上进行创作。用户在简书上面可以方便的创作自己的作品，用户在简书上面可以方便的创作自己的作品,互相交流在其上进行创用...<a href="#">阅读全文<i class="angle down icon" data-filtered="filtered"></i></a></p>
+                    <div class="collect">
+                        收录了6071篇文章<i class="circle">•</i>1190个回答
+                    </div>
+                </div>
+                <div class="inline fllowButtonBox">
+                    <button class="ui button follow"><i class="fa fa-plus">+</i><span>关注</span></button>
+                </div>
+            </div>
+        </div>
         <!-- 推荐作者 -->
         <div class="followAuthor">
             <div class="followAuthor-item">
@@ -92,11 +112,194 @@
             </div>
         </div>
 
-	</div>
+    </div>
+
+
+</div>
+<!--赞-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(function () {
+        for (var i = 0; i < $('.likes').length; i++) {
+            var ran = 120;
+//			var ran = Math.floor(Math.random() * 22 + 1)
+            $('.likes').eq(i).text(ran)
+        }
+        $(".img26").click(function () {
+            var num = $(this).next().text()
+            num++;
+            $(this).next().text(num);
+        });
+    });
+</script>
+
+<!--踩-->
+<script type="text/javascript">
+    $(function () {
+        for (var i = 0; i < $('.cai').length; i++) {
+            var ran = 13;
+//			var ran = Math.floor(Math.random() * 22 + 1)
+            $('.cai').eq(i).text(ran)
+        }
+        $(".down").click(function () {
+            var num = $(this).next().text()
+            num++;
+            $(this).next().text(num);
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    //需要添加展开收起的添加四个类 ，父元素 .wordTogle  文字 .text  全文.sumTxt  收起.Takeup
+    var content_arr=[];
+    $(function(){
+        $(".wordTogle").each(function(){
+            var content=$.trim($(this).children(".text").text());
+            content_arr.push(content);
+
+        })
+        var len=content_arr.length
+        for(var i=0;i<len;i++){
+            $(".wordTogle").eq(i).children(".text").attr("data-index",i)
+            var txt=content_arr[i]
+            if(txt.length>100){
+                //100最多显示的字数
+                txt=txt.substr(0,100)+"..."
+                $(".wordTogle").eq(i).children(".sumTxt").show()
+            }
+            $(".wordTogle").eq(i).children(".text").text(txt)
+        }
+
+
+        $(".sumTxt").on("click",function(e){
+            var index=$(this).siblings(".text").attr("data-index");
+            $(".wordTogle").eq(index).children(".text").text(content_arr[index])
+            $(this).hide();
+            $(this).siblings(".Takeup").show()
+        })
+
+        $(".Takeup").on("click",function(e){
+            var index=$(this).siblings(".text").attr("data-index");
+            var txt=$(".wordTogle").eq(index).children(".text").text()
+            txt=txt.substr(0,100)+"..."
+            $(".wordTogle").eq(index).children(".text").text(txt)
+            $(this).hide();
+            $(this).siblings(".sumTxt").show()
+        })
+
+    })
+    $(document).ready(function(){
+        $(".shareHover").click(function(){
+            $(".bdsharebuttonbox").toggle()
+        })
+    })
+
+</script>
+
+<!--//分享到QQ空间-->
+<script type="text/javascript">
+
+    //分享到QQ空间
+    function one(){
+        var share1=new ShareTip();
+        share1.sharetoqqzone(
+                "问答首页",
+                "http://192.168.10.104/ui27/index.html",
+                "http://192.168.10.104/ui27/images/content-img-1.png"
+        );
+    }
+
+    var ShareTip = function()  {};
+    //分享到QQ空间
+    ShareTip.prototype.sharetoqqzone=function(title,url,picurl)
+    {
+        var shareqqzonestring='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary='+title+'&url='+url+'&pics='+picurl;
+        window.open(shareqqzonestring,'newwindow','height=400,width=400,top=100,left=100');
+    }
+</script>
+
+<!--jq的分享-->
+<script src="js/share.js" type="text/javascript"></script>
+<script>
+
+
+    $(function() {
+        $("#socialShare").socialShare({
+            content: $("p").text().trim(),
+            url: "http://blog.csdn.net/libin_1/article/details/51935944",
+            titile: $("h1").text().trim()
+        });
+        $(".msb_main").trigger('click');
+    });
+
+    $("#shareQQ").on("click", function() {
+        $(this).socialShare("tQQ");
+    })
+
+    $("#main").click(function() {
+        var openUrl = "https://www.baidu.com"; //弹出窗口的url
+        var iWidth = 630; //弹出窗口的宽度;
+        var iHeight = 580; //弹出窗口的高度;
+        var iTop = (window.screen.availHeight - 30 - iHeight) / 2; //获得窗口的垂直位置;
+        var iLeft = (window.screen.availWidth - 10 - iWidth) / 2; //获得窗口的水平位置;
+        window.open(openUrl, "", "height=" + iHeight + ", width=" + iWidth + ", top=" + iTop + ", left=" + iLeft + "" + ",toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
+        //window.open('page.html', 'newwindow', 'height=580, width=650, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no');
+    });
+    $(function() {
+        function autocenter() {
+            var bodyW = parseInt(document.documentElement.clientWidth);
+            var bodyH = parseInt(document.documentElement.clientHeight);
+            var elW = $("#weixin").width();
+            var elH = $("#weixin").height();
+            console.log((bodyW - elW) / 2);
+            $("#weixin").css("left", (bodyW - elW) / 2);
+            $("#weixin").css("top", (bodyH - elH) / 2);
+        }
+        window.onresize = function() {
+            autocenter();
+        };
+    });
+
+
+
+</script>
 
 
 
 
-	
+
+
+<script>
+    $(function(){
+        $(".ProfileMain-tabs li").each(function(){
+            var that=this;
+            $(this).on("click",function(event){
+                var index=$(that).index();
+                var active=$(that).find("a").hasClass('is-active');
+                if(!active){
+                    $(that).find("a").addClass('is-active');
+                    $(that).siblings().find("a").removeClass('is-active')
+                }
+                $(".ProfileMain-box").children('.ProfileContent').eq(index).show().siblings().hide();
+
+            })
+        })
+        //  我的文章tab
+        $(".ProfileArticle-nav li").each(function(){
+            var that=this;
+            $(this).on("click",function(event){
+                var index=$(that).index();
+                var active=$(this).hasClass('active');
+                if(!active) $(this).addClass('active').siblings().removeClass('active');
+                $(".ProfileArticleMain").children('.ProfileArticle-content').eq(index).show().siblings().hide();
+
+            })
+        })
+    })
+</script>
+
+
+
+
 </body>
 </html>

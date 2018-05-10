@@ -13,7 +13,7 @@
 .facebook-img{width: 20%;height: 115px;float:left;background: #ffffff;padding:12px 15px 12px 25px;}
 .facebook-img img{width:100%;height:100%;}
 /*.facebook-desc{width:75%;min-height:115px;background: #ffffff;float:left;}*/
-.facebook-title h3{font-size:20px;margin:10px;color:#222;font-weight: 600;padding:15px 20px 0  165px}
+.facebook-title h3{font-size:20px;margin:10px 10px 5px 10px;color:#222;font-weight: 600;padding:1px 20px 0  165px}
 .introduction{padding:5px 25px;}
 .introduction span{letter-spacing:1px;font-size: 14px;font-weight:500}
 /*.facebook-desc p{letter-spacing:0.9px;font-size: 14px;font-weight:400}*/

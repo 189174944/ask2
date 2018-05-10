@@ -84,7 +84,7 @@ i{
 
 /* 内容 */
 .content-word {
-	padding: 0 20px;
+	padding: 0 20px 0 0;
 }
  .content-word>.title{
      font-family: 华文细黑;
