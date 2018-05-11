@@ -1,5 +1,5 @@
 .contentBox{
-    padding: 16px;
+    padding:0 16px 16px;
     font-size: 14px;
     background-color: #fff;
     max-width: 1200px;
@@ -197,6 +197,8 @@ h1,h2{
 .authorImg{width: 64px !important;height: 64px !important;margin: 0 20px 0 30px;}
 .author-name{font-size: 20px;}
 .followAuthor-word{width:55%;margin-top:20px}
+.followAuthor-word a:hover{color: coral;}
+.followAuthor-word a{color: #222;}
 .followAuthor-word h3{font-weight: 600;}
 .followAuthor-word .name{margin-bottom: 14px;font-size: 16px;}
 .followAuthor-word .name strong{font-size:22px;color: #000;margin-right: 8px;}
@@ -207,7 +209,7 @@ h1,h2{
 .followTopic h4{margin-bottom: 8px;}
 .followTopic p{margin-bottom: 5px;}
 /*.followTopic .wordItem{color: #858585;}*/
-.collect {font-size: 14px;color: #787878;}
+.collect  a{font-size: 14px;color: #616161;}
 .collect .circle{margin: 0 2px;}
 
 /*添加关注 end */
@@ -1070,10 +1072,13 @@ float: right;
 }
 .writePage .topicBox{
     border:solid 1px #dedede;
-    padding: 4px 12px;
+    line-height: 20px;
+    padding: 5px 12px 6px;
     color: #666;
     min-width: 500px;
 }
+.writePage .topicBox a{line-height: 30px;}
+
 .writePage .wordItem input{
     border: none;
     margin-left: 2px;
@@ -1150,7 +1155,7 @@ float: right;
 .suitAnswer .addLabel i{color: #999;font-size: 18px;}
 .suitAnswer .addLabel input{border: none;}
 .suitAnswer .problem{margin: 30px 0 35px; color: #333;cursor: pointer;}
-.suitAnswer .problem h4{margin-bottom:12px;font-size:20px;font-weight: 600;}
+.suitAnswer .problem h4{margin-bottom:12px;font-weight: 600;}
 .suitAnswer .problem .item{margin-right:16px;color: #999;}
 .suitAnswer .problem:hover h4{ color: #3285f7}
 .suitAnswer .problem .item:hover{color: #3285f7}
@@ -1161,5 +1166,7 @@ float: right;
 .suitAnswer .inviteItem-left .dian{margin:0 8px;}
 .suitAnswerList .suitAnswerItem{display: none;}
 .suitAnswerList .suitAnswerItem:first-child{display: block;}
-
-
+.List-headerText{color:#666;font-weight: 600;}
+.List-header .List-headerText span{color: #333;font-weight: 600;}
+.topicBoxItem a{color: #a8a8a8
+}

@@ -5,15 +5,20 @@
     <title>写文章</title>
     <link rel="stylesheet" type="text/css" href="css/semantic.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-
+    <link rel="stylesheet" type="text/css" href="css/briefbook.css">
     <link rel="stylesheet" type="text/css" href="css/category.css">
-
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/article.css">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/share.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">-
+    <link rel="stylesheet" media="all" href="css/topic.css" />
     <link rel="stylesheet" media="all" href="css/zhongchou.css" />
+    <link rel="stylesheet" media="all" href="css/common.css" />
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/semantic.js"></script>
-
+    <script type="text/javascript" src="js/semantic.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
       <!-- 编辑 -->
   <script type="text/javascript" charset="utf-8" src="js/utf8-php/ueditor.config.js"></script>
   <script type="text/javascript" charset="utf-8" src="js/utf8-php/ueditor.all.min.js"> </script>
@@ -33,7 +38,7 @@
                     </div>&nbsp; &nbsp;
                     <div class="tiwen"><input type="submit" class="ui primary button " value="提问"></div>
                     <div class="choice"><i class="idea icon"></i>回答</div>
-                    <div class="choice"><a href="http://192.168.10.103/ui27/addxinzhi.html" ><i class="edit icon"></i>写文章</a></div>
+                    <div class="choice"><a href="./write_article.html"><i class="edit icon"></i>写文章</a></div>
                     <div class="choice news">消息<span class="label">19</span></div>
                     <div class="login">
                         <ul>
@@ -51,34 +56,60 @@
 
 <div class="contentBox clear" style="max-width: 960px;">
    <div class="List-header">
-        <h4 class="List-headerText" style="color:#666;"><span>写文章</span></h4>
+        <h4 class="List-headerText"><span>写文章</span></h4>
     </div>
    <div class="writePage">
         <div class="relative heading">
             <input class="headingInput" maxlength="30" placeholder="标题5-30个字符" />
             <span><i class="wordNumb">0</i>/30</span>
         </div>
- <script id="editor" type="text/plain" style="width:98%;height:300px;"></script>
+ <script id="editor" type="text/plain" style="width:96%;height:200px;"></script>
 
 <div class="wordItem">
     <text class="inline name">绑定话题</text>
     <div class="inline clear topicBox">
         <span class="inline topicBoxList">
-            <span class="topicBoxItem">计算机专业<i class="remove icon"></i></span>
+            <span class="topicBoxItem">计算机专业<a href="javascript:;"> <i class="remove icon"></i></a></span>
         </span>
+
         <input placeholder="添加话题(1/5)" />
-        <i class="search icon"></i>
+        <a href="#"><i class="search icon"></i></a>
     </div>
 </div>
 
-<div class="wordItem">
-    <text class="inline name">封面</text>
-    <div class="inline clear addImgBox">
-        <div class="upImg">
-            <i class="plus icon"></i>
-        </div>
-    </div>
-</div>
+
+       <div class="user-home bg-white" >
+           <div class="container index">
+               <form class="form-horizontal mar-t-1" action="http://192.168.10.103/ask2/index.php?user/addxinzhi.html"  method="post" enctype="multipart/form-data">
+                   <div class="row main">
+                       <div class="col-md-8">
+                           <div class="fenmian" >
+                               <p>封面图:</p>
+                               <div class="form-group">
+                                   <div class="col-md-24">
+                                       <div id="preview" style="overflow:visible">
+                                           <img class="img-thumbnail" style="width:288px;height:192px;" data-caption="" id="imghead" style="max-height: 300px;" border=0 src='./images/2.jpg'>
+                                       </div>
+                                       <div class="add-img-box row">
+                                           <div class="col-sm-24">
+    <span class="add-img" >
+  <a id="layerUploadButton"></a></span>
+                                               <div class="add-img-html5" style=""><span>
+  </span><a class="text-danger" href="#"  data-toggle="tooltip" data-placement="bottom" title="点击这选择封面图片，大小建议288px*192px,或者填封面图外部链接" style="font-size:12px;cursor:pointer;margin-top:3px;"><i class="fa fa-image" ></i>点我上传封面图
+                                               </a>
+                                                   <input type="file" id="layer_upload" onchange="previewImage(this)" name="image" title="点击这选择封面图片，大小建议288px*192px,或者填封面图外部链接" style="opacity: 0;height: 40px;position:relative;top:-2rem;">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </form>
+           </div>
+       </div>
+
 <div class="botBox">
     <div class="imgTips">优质的的狂欢节奥斯卡三等奖卡是</div>
 <div class="botBut">
@@ -117,6 +148,100 @@ $(".headingInput").on("input",function(e){
 
 </script>
 
+<script type="text/javascript">
+    $("#myLgModal .modal-dialog").css("width","460px");
+    function showcategory(){
+        $('#myLgModal').modal({
+            position    :50,
+            moveable : true,
+            show     : true
+        })
+    }
+    $("#article_btn").click(function(){
+        var v=$("#topicclass").val();
+        var fv=$("#layer_upload").val();
+        var upfv=$("#outimgurl").val();
+        if(v==''){
+            alert("请选择文章分类");
+            showcategory();
+            return false;
+        }
+        if(fv==''&&upfv==''){
+
+
+            alert("请选择文章封面图");
+            return false;
+        }
+    })
+
+    function checkarticle(){
+        if($("#topicclass")==''){
+            alert("请选择文章分类");
+            return false;
+        }
+    }
+    //图片上传预览    IE是用了滤镜。
+    function previewImage(file)
+    {
+        var MAXWIDTH  = 300;
+        var MAXHEIGHT = 240;
+        var div = document.getElementById('preview');
+        if (file.files && file.files[0])
+        {
+            div.innerHTML =' <a target="_blank" id="imgshowlink" href="" data-toggle="lightbox" data-group="image-group-1"><img class="img-thumbnail" id=imghead></a>';
+            var img = document.getElementById('imghead');
+            img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+            }
+            var reader = new FileReader();
+            reader.onload = function(evt){
+                img.src = evt.target.result;
+                $("#imghead").attr("data-img",evt.target.result);
+                $("#imgshowlink").attr("href",evt.target.result);
+
+            }
+            reader.readAsDataURL(file.files[0]);
+        }
+        else //兼容IE
+        {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img class="img-thumbnail" data-caption="" data-toggle="lightbox" id=imghead>';
+            var img = document.getElementById('imghead');
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+        }
+    }
+    function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+        var param = {top:0, left:0, width:width, height:height};
+        if( width>maxWidth || height>maxHeight )
+        {
+            rateWidth = width / maxWidth;
+            rateHeight = height / maxHeight;
+
+            if( rateWidth > rateHeight )
+            {
+                param.width =  maxWidth;
+                param.height = Math.round(height / rateWidth);
+            }else
+            {
+                param.width = Math.round(width / rateHeight);
+                param.height = maxHeight;
+            }
+        }
+
+        param.left = Math.round((maxWidth - param.width) / 2);
+        param.top = Math.round((maxHeight - param.height) / 2);
+        return param;
+    }
+</script>
 
 
 </body>
