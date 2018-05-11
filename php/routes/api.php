@@ -22,11 +22,9 @@ Route::group(['middleware' => 'api', 'namespace' => 'Api'], function () {
         dd(\App\Models\UsersModel::with('special')->get()->toArray());
     });
 
-
     //收藏模块
     Route::match(['get','post'],'/collect/artical_dir', 'CollectController@articalDir');
     Route::get('/collect/question_dir', 'CollectController@questionDir');
     Route::get('/collect/artical_item', 'CollectController@articalItem');
     Route::get('/collect/question_item', 'CollectController@questionItem');
-
 });
