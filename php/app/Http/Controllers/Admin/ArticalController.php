@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\ArticalModel;
+use App\Models\CommentModel;
 use App\Models\UsersArticalModel;
+use App\Models\UsersModel;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -62,13 +64,15 @@ class ArticalController extends Controller
     {
         $artical = ArticalModel::find($id);
         if ($artical) {
-            $artical->with('users', 'topic', 'comment.users')->get();
+            $artical->with('users', 'topic')->get();
 //            收藏数量：包括问题与文章
             $collectCount = UsersArticalModel::where('artical_id', $id)->count();
+//            文章评论
+            $comment = \App\Models\CommentModel::where('artical_id',$id)->with('users', 'replyedUsers')->get();
             //话题标签颜色
-            $colors = ['green','red','orange','blue','purple'];
+            $colors = ['green', 'red', 'orange', 'blue', 'purple'];
 //            文章于问题共用一个模版
-            return view('admin.q_a_show', compact('artical', 'collectCount','colors'));
+            return view('admin.q_a_show', compact('artical', 'collectCount', 'colors','comment'));
         } else {
             dd("文章不存在");
         }

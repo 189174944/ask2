@@ -5,11 +5,10 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link href="{{asset('semantic/dist/semantic.min.css')}}" rel="stylesheet"/>
+    <link href="{{asset('semantic/dist/semantic.css')}}" rel="stylesheet"/>
     <link href="{{asset('plugins/ionicons/css/ionicons.min.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/main.css')}}" rel="stylesheet"/>
     <link href="{{asset('plugins/pacejs/pace.css')}}" rel="stylesheet"/>
-    <script src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
     <style type="text/css">
         .resizeHeight {
             height: -webkit-fill-available;
@@ -100,6 +99,7 @@
         <!--maincontent-->
     </div>
 </div>
+<script src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
 <script src="{{asset('semantic/dist/semantic.min.js')}}"></script>
 <script src="{{asset('plugins/cookie/js.cookie.js')}}"></script>
 <script src="{{asset('plugins/nicescrool/jquery.nicescroll.min.js')}}"></script>

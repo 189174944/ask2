@@ -8,6 +8,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['web
     Route::get('/', 'IndexController@index');
     Route::get('/users', 'UsersController@index');
     Route::resource('/topic', 'TopicController');
+//    修改文章状态
+    Route::post('/topic/change/status', 'TopicController@changeStatus');//删除父话题接口
     Route::resource('/login', 'LoginController');
     Route::resource('/artical', 'ArticalController');
     Route::get('/logout', 'LoginController@logout');

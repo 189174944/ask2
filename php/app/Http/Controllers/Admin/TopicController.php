@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\ArticalModel;
+use App\Models\ArticalTopicModel;
 use App\Models\TopicManagerModel;
 use App\Models\TopicModel;
 use App\Models\TopicRelative;
@@ -199,7 +201,21 @@ class TopicController extends Controller
 
     public function destroy($id)
     {
-        //
+        $result = ArticalTopicModel::where([
+            'artical_id' => $id,
+            'topic_id' => request('topic_id')
+        ])->delete();
+        if ($result) {
+            return response()->json([
+                'code' => 1,
+                'info' => 'success',
+            ]);
+        } else {
+            return response()->json([
+                'code' => 0,
+                'info' => 'fail',
+            ]);
+        }
     }
 
 
@@ -268,7 +284,63 @@ class TopicController extends Controller
         return response()->json([
             'code' => 0,
             'info' => 'success',
-            'results' => TopicModel::where('name', 'like', $keywords . '%')->where('id','!=',$topic_id)->select('id', 'name as text')->get()
+            'results' => TopicModel::where('name', 'like', $keywords . '%')->where('id', '!=', $topic_id)->select('id', 'name as text')->get()
+        ]);
+    }
+
+
+    /*
+     * 更改文章状态
+     * checkOk 通过审核
+     * checkNo 不通过审核
+     * moveToTrash 移到回收站
+     */
+    public function changeStatus(Request $request)
+    {
+        $action = $request->get('action');
+        $id = $request->get('id');
+        $artical = ArticalModel::where('id', $id);
+        if ($action == "checkOk") {
+            if ($artical->update([
+                'status' => 3
+            ])) {
+                return response()->json([
+                    'code' => 1,
+                    'info' => 'success'
+                ]);
+            }
+        } elseif ($action == "checkNo") {
+            if ($artical->update([
+                'status' => 5
+            ])) {
+                return response()->json([
+                    'code' => 1,
+                    'info' => 'success'
+                ]);
+            }
+        } elseif ($action == "block") {
+            if ($artical->update([
+                'is_blocked' => 1
+            ])) {
+                return response()->json([
+                    'code' => 1,
+                    'info' => 'success'
+                ]);
+            }
+        } elseif ($action == "cancelBlock") {
+            if ($artical->update([
+                'is_blocked' => 0
+            ])) {
+                return response()->json([
+                    'code' => 1,
+                    'info' => 'success'
+                ]);
+            }
+        }
+
+        return response()->json([
+            'code' => 0,
+            'info' => '未知错误'
         ]);
     }
 }

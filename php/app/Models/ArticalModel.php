@@ -16,7 +16,7 @@ class ArticalModel extends Model
 
     public function topic()
     {
-        return $this->belongsToMany(TopicModel::class, 'ask_article_topic', 'artical_id', 'topic_id');
+        return $this->belongsToMany(TopicModel::class, 'ask_artical_topic', 'artical_id', 'topic_id');
     }
 
     public function users()

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="{{asset('semantic/dist/semantic.min.css')}}" rel="stylesheet"/>
+    <link href="{{asset('semantic/dist/semantic.css')}}" rel="stylesheet"/>
     <link href="{{asset('plugins/ionicons/css/ionicons.min.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/main.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/style.css')}}" rel="stylesheet"/>
@@ -38,6 +38,7 @@
 </div>
 <script src="{{asset('js/bower_components/vue/dist/vue.min.js')}}"></script>
 <script src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
+<script src="{{asset('bower_components/layer/dist/layer.js')}}"></script>
 <script src="{{asset('semantic/dist/semantic.min.js')}}"></script>
 <script src="{{asset('plugins/cookie/js.cookie.js')}}"></script>
 <script src="{{asset('plugins/nicescrool/jquery.nicescroll.min.js')}}"></script>
@@ -48,5 +49,12 @@
 <script src="{{asset('bower_components/select2/dist/js/select2.full.min.js')}}"></script>
 {{--select2--}}
 @yield('js')
+<script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+</script>
 </body>
 </html>

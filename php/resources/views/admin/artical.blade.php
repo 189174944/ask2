@@ -28,7 +28,9 @@
                     <td>{{$t->title}}</td>
                     <td>
                         @foreach($t->topic as $k)
-                            <a class="ui green circular label">{{$k->name}}</a>
+                            <a class="ui green circular label">{{$k->name}}
+                                <i class="icon delete"></i>
+                            </a>
                         @endforeach
                     </td>
                     <td>
@@ -87,7 +89,9 @@
 @endsection
 
 @section('js')
+<script>
 
+</script>
 @endsection
 
 
