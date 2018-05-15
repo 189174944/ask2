@@ -12,7 +12,7 @@
     <meta name="description" content="Stagb Admin Template"/>
     <meta name="keywords"
           content="html5, ,semantic,ui, library, framework, javascript,jquery,template,blog,stagb,template"/>
-    <link href="{{asset('semantic/dist/semantic.min.css')}}" rel="stylesheet"/>
+    <link href="{{asset('semantic/dist/semantic.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/main.css')}}" rel="stylesheet"/>
 </head>
 <body>
