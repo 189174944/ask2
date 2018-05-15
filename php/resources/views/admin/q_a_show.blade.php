@@ -66,14 +66,8 @@
             {{$artical->content}}
         </div>
         <div class="ui segment">
-            被收藏数量({{$collectCount}})、
-
-            @if($artical->type==1)
-                被评论数量({{$artical->comment->count()}})
-            @else
-                被回答数量({{$artical->comment->count()}})
-            @endif
-
+            <i class="star yellow icon"></i>({{$collectCount}})
+            <i class="{{$artical->type==1?"comment":"comment" }} green icon"></i>({{$artical->comment->count()}})
         </div>
     </div>
     <div class="ui segments">
